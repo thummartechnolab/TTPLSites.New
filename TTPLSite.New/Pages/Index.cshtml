@@ -1,0 +1,861 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!-- /// Banner-Section-Start /// -->
+<div class="Banner-Section">
+    <div class="owl-carousel">
+        <!-- <div class="item">
+            <div class="banner-cont">
+                <h2 class="bann-heading">OPTIMIZE IT SYSTEMS</h2>
+                <h3 class="spa-org">Innovative Solutions to<span> Boost Your Business</span></h3>
+                <p class="bnner-para">
+                    With next-generation bespoke software development capabilities, you can enable
+                    intelligent<br>
+                    automation, implement agility to transform, accelerate, and optimise your
+                    organisation.
+                </p>
+                <div class="banner-bttn"> <a class="btn-banner" href="contact.html">Let's Talk</a> </div>
+            </div>
+            <img src="images/banner-about.jpg" alt="">
+        </div> -->
+        <div class="item">
+            <video src="images/video-banner2.mp4" autoplay loop muted></video>
+            <div class="loop text-container">
+                <p>
+                    <h3 style="color: white;">We are here </h3>
+                </p>
+                <div class="rotating-text-wrapper">
+                    <h2>To improve the efficiency of your<br /> business</h2>
+                    <h2>To Build responsive, user-friendly websites that <br>enhance your online presence and user experience</h2>
+                    <h2>To assist, support, and guide you <br>every step of the way</h2>
+                    <h2> To Provide guidance on technology strategy, <br> architecture, and digital transformation</h2>
+                    <h2>To Provide tailored solutions to meet your unique requirements,<br> from web and mobile applications to enterprise software</h2>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+        <!-- <div class="item">
+            <div class="banner-cont">
+                <h3 class="spa-org">“Create the world <span> you think about”</span></h3>
+                <p class="bnner-para">
+                    Using creative methods and technological solutions,<br />
+                    TTPL specializes at resolving challenging software development problems.
+                </p>
+            </div>
+            <img src="images/banner-img.jpg" alt>
+        </div> -->
+    </div>
+    <!-- Add more items as needed -->
+
+    <div class="last-bnn-btn">
+        <button id="prevButton"><i class="fa-solid fa-angle-left"></i></button>
+        <button id="nextButton"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+</div>
+<!-- /// banner-Section-end /// -->
+<!-- /// Technology-Section-Start /// -->
+<div class="technology-section anguler-tab">
+    <div class="container">
+        <div class="technology-heading">
+            <h2 class="all-homepage-heading">Technology</h2>
+        </div>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Front End')" id="defaultOpen">Front End</button>
+            <button class="tablinks" onclick="openCity(event, 'Back End')">Back End</button>
+            <button class="tablinks" onclick="openCity(event, 'Mobile')">Mobile</button>
+            <button class="tablinks" onclick="openCity(event, 'Open Source')" id="defaultOpen">Open Source</button>
+            <button class="tablinks" onclick="openCity(event, 'DataBase')">DataBase</button>
+            <button class="tablinks active" onclick="openCity(event, 'DevOps/Clouds')">DevOps/Clouds</button>
+        </div>
+        <div id="Front End" class="tabcontent" style="display: none;">
+            <div class="seven-images">
+                <div class="technology-pic">
+                    <img src="images/Angular.png" class="black-img"><img class="color-img"
+                                                                         src="images/Angular-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/React.png" class="black-img"><img class="color-img"
+                                                                       src="images/React-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/Vue-black.png" class="black-img"><img class="color-img"
+                                                                           src="images/Vue-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/ang-black.png" class="black-img"><img class="color-img"
+                                                                           src="images/ang-color.png">
+                </div>
+            </div>
+        </div>
+        <div id="Back End" class="tabcontent" style="display: none;">
+            <div class="seven-images">
+                <div class="technology-pic">
+                    <img src="images/java-black.png" class="black-img"><img class="color-img" src="images/Javascript-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/cor-net-black.png" class="black-img"><img class="color-img" src="images/cor-net-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/node-black.png" class="black-img"><img class="color-img" src="images/node-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/php.png" class="black-img"><img class="color-img"
+                                                                     src="images/php-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/java.png" class="black-img"><img class="color-img"
+                                                                      src="images/java-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/python-black.png" class="black-img"><img class="color-img" src="images/python-color.png">
+                </div>
+            </div>
+        </div>
+        <div id="Mobile" class="tabcontent" style="display: none;">
+            <div class="seven-images">
+                <div class="technology-pic">
+                    <img src="images/ios-black.png" class="black-img"><img class="color-img"
+                                                                           src="images/ios-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/andriod-black.png" class="black-img"><img class="color-img" src="images/android-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/kotlin-black.png" class="black-img"><img class="color-img" src="images/kotlin-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/react-native-black.png" class="black-img"><img class="color-img" src="images/react-native-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/xamarin-black.png" class="black-img"> <img class="color-img" src="images/xamarin-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/webflow-black.png" class="black-img"> <img class="color-img" src="images/webflow-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/swi-black.png" class="black-img"> <img class="color-img" src="images/swift-color.png">
+                </div>
+            </div>
+        </div>
+        <div id="Open Source" class="tabcontent" style="display: none;">
+            <div class="seven-images">
+                <div class="technology-pic">
+                    <img src="images/Wordpress.png" class="black-img"><img class="color-img"
+                                                                           src="images/Wordpress-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/magento-black.png" class="black-img"><img class="color-img" src="images/magento-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/Shopify-black.png" class="black-img"><img class="color-img" src="images/Shopify.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/dnn-black.png" class="black-img"><img class="color-img"
+                                                                           src="images/dnn-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/kotlin-black.png" class="black-img"><img class="color-img" src="images/kotlin-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/woo-black.png" class="black-img"><img class="color-img"
+                                                                           src="images/woocomerce-color.png">
+                </div>
+            </div>
+        </div>
+        <div id="DataBase" class="tabcontent" style="display: none;">
+            <div class="seven-images">
+                <div class="technology-pic">
+                    <img src="images/mogo-black.png" class="black-img"><img class="color-img" src="images/mongo-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/mysql-black.png" class="black-img"><img class="color-img" src="images/mysql-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/sql-server-black.png" class="black-img"><img class="color-img" src="images/sql-server-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/postgresql-black.png" class="black-img"><img class="color-img" src="images/postgresql-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/mariadb-blacl.png" class="black-img"><img class="color-img" src="images/mariadb-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/dyamo-black.png" class="black-img"><img class="color-img" src="images/dynmoDB-color.png">
+                </div>
+            </div>
+        </div>
+        <div id="DevOps/Clouds" class="tabcontent" style="display: block;">
+            <div class="seven-images">
+                <div class="technology-pic">
+                    <img src="images/aws-black.png" class="black-img"> <img class="color-img" src="images/AWS-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/azure-black.png" class="black-img"> <img class="color-img" src="images/Azure-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/google-black.png" class="black-img"> <img class="color-img" src="images/google-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/Bootstrap.png" class="black-img"> <img class="color-img" src="images/bootstrap-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/jenkins-black.png" class="black-img"> <img class="color-img" src="images/jenkins-color.png">
+                </div>
+                <div class="technology-pic">
+                    <img src="images/kubernetes-black.png" class="black-img"> <img class="color-img" src="images/Kubernetes-color.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /// Technology-Section-End /// -->
+<!-- /// Industries We Serve-Section-start /// -->
+<div class="industry-serv">
+    <div class="container">
+        <div class="industry-heading">
+            <h2>INDUSTRIES WE SERVE</h2>
+            <p>We offer a variety of IT services that promise success for every industry.</p>
+        </div>
+        <div class="industry-slider-home">
+            <ul class="slider-logo">
+                <li>
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="images/industry/Green Energy.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Green Energy</h5>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="img-wrapper"><img src="images/industry/healthcare.png" alt="..." /></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Healthcare</h5>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="img-wrapper"><img src="images/industry/Pharmaceuticals.png" alt="..." /></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Pharmaceuticals</h5>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="images/industry/Education.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Education</h5>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="img-wrapper"><img src="images/industry/travel.png" alt="..." /></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Travel & Hospitality</h5>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="img-wrapper"><img src="images/industry/IT-Development.png" alt="..." /></div>
+                        <div class="card-body">
+                            <h5 class="card-title">IT Development</h5>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="images/industry/ecommerce.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Retails</h5>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="img-wrapper"><img src="images/industry/logistics.png" alt="..." /></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Logistic & Supply</h5>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="img-wrapper"><img src="images/industry/hr.png" alt="..." /></div>
+                        <div class="card-body">
+                            <h5 class="card-title">HRM</h5>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="img-wrapper"><img src="images/industry/Manufacturing.png" alt="..." /></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Manufacturing</h5>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="images/industry/realestate.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Real Estate</h5>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="images/industry/Oil-Energy.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Oil & Energy</h5>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- /// Industries We Serve-Section-End /// -->
+<!-- /// SERVICES-Section-Start /// -->
+<div class="service-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="services-left side-sticky-section">
+                    <h2>SERVICES</h2>
+                    <h3>Highly-tailored IT Solutions.</h3>
+                    <p>
+                        Welcome to TTPL, Our office is based in India and have presence in the UK a gateway to Europe offering cost effective prices.
+                    </p>
+                    <p>
+                        Every top industry, including the IT sector, must innovate "with conviction" to survive in the modern digital environment. Our years of industry experience can help your organisation succeed by providing custom software designing and development services. From the moment a concept is conceived to strategy, research, quality control, technological consultation, and post-development software support, we remain by our clients' sides.
+                    </p>
+                    <p>
+                        Software development is a competence that TTPL has accomplished thanks to its deep technical knowledge and track record across numerous industries.
+                    </p>
+                    <div class="btn-2"> <a href="contact.html">Start a Project</a> </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="services-right slider">
+                    <div class="single-service ">
+                        <a href="./service/web-application-development-services.html">
+                            <div class="img-sec">
+                                <img src="images/webdevicon-1.png" class="wight"> <img src="images/ico-11.png" class="oreng-icon">
+                            </div>
+                            <h3>Web Apps Development</h3>
+                            <p>
+                                Thummar Technologies is a top choice for web application development services for
+                                several compelling reasons like, Expertise & Experience, Customized Solutions, User
+                                Centric Approach, Agile...
+                            </p>
+                            <div class="arrow-right">
+                                <a href="./service/web-application-development-services.html">
+                                    <img src="svg/arrow-right.svg">
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="single-service ">
+                        <a href="mobile-application-development.html">
+                            <div class="img-sec">
+                                <img src="images/webdevicon-2.png" class="wight"> <img src="images/ico-22.png" class="oreng-icon">
+                            </div>
+                            <h3>Mobile Apps Development</h3>
+                            <p>
+                                We are a well-known mobile app development company with experience creating safe,
+                                scalable, and effective mobile apps for organizations of all sizes. To turn your
+                                concept...
+                            </p>
+                            <div class="arrow-right">
+                                <a href="./service/mobile-app-development.html">
+                                    <img src="svg/arrow-right.svg">
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="single-service ">
+                        <a href="#">
+                            <div class="img-sec">
+                                <img src="images/webdevicon-3.png" class="wight"> <img src="images/ico-33.png" class="oreng-icon">
+                            </div>
+                            <h3>Custom Development</h3>
+                            <p>
+                                At TTPL, we specialize in developing plan of action for companies all over the
+                                world, assisting them in bringing their cutting-edge concepts to life online. Our
+                                goal-driven...
+                            </p>
+                            <div class="arrow-right">
+                                <a href="./service/custom-development.html">
+                                    <img src="svg/arrow-right.svg">
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="single-service ">
+                        <a href="#">
+                            <div class="img-sec">
+                                <img src="images/webdevicon-4.png" class="wight"> <img src="images/ico-44.png" class="oreng-icon">
+                            </div>
+                            <h3>E-Commerce Application Development</h3>
+                            <p>
+                                Our specialists will analyse your company process and provide a scalable ecommerce
+                                solution that can adapt to changing technology and market trends. Our primary
+                                objective for ecommerce...
+                            </p>
+                            <div class="arrow-right">
+                                <a href="./service/e-commerce-application-development.html">
+                                    <img src="svg/arrow-right.svg">
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="single-service ">
+                        <a href="#">
+                            <div class="img-sec">
+                                <img src="images/webdevicon-5.png" class="wight"> <img src="images/ico-55.png" class="oreng-icon">
+                            </div>
+                            <h3>UI/UX Development</h3>
+                            <p>
+                                Creating visually compelling, highly intuitive and optimal designs with the end-user
+                                in mind to captivate your audience and convert them into potential customers....
+
+                            </p>
+                            <div class="arrow-right">
+                                <a href="./service/ui-ux-development.html">
+                                    <img src="svg/arrow-right.svg">
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="single-service ">
+                        <a href="#">
+                            <div class="img-sec">
+                                <img src="images/webdevicon-6.png" class="wight"> <img src="images/ico-66.png" class="oreng-icon">
+                            </div>
+                            <h3>Software Testing & QA</h3>
+                            <p>
+                                Our forward-thinking and inventive strategy eliminates mistakes, saves total cycle
+                                time, and minimises problems. We provide a comprehensive range of human and
+                                automated testing services...
+                            </p>
+                            <div class="arrow-right">
+                                <a href="./service/software-testing.html">
+                                    <img src="svg/arrow-right.svg">
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /// SERVICES-Section-end /// -->
+<!-- /// About-Section-Start /// -->
+<div class="about-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-lg-6 root-about">
+                <div class="images-about"> <img src="images/about.jpg" alt="" /> </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-6 cont-about">
+                <div class="content-about">
+                    <h2>ABOUT US</h2>
+                    <h6>RICH EXPERIENCE</h6>
+                    <h4>We do what we love & we love what we do.</h4>
+                    <p>TTPL is a software services provider company.</p>
+                </div>
+                <div class="listing-about">
+                    <ul>
+                        <li>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            Develop IT solutions that affect and reshape business processes, with a focus on innovation and value development.
+                        </li>
+                        <li>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            We not only create software but also educate our clients with current technology.
+                        </li>
+                        <li>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            Our continual development and training program's ensure that we are always prepared to deliver a wide range of services to our clients, utilising cutting edge technology.
+                        </li>
+                        <li>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            TTPL focusses on delivering project execution and management dependability models backed up by extensive management planning and oversight.
+                        </li>
+                    </ul>
+                    <a href="about.html">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /// About-Section-End /// -->
+<!-- /// Our process-Section-start /// -->
+<!-- <div class="work-block">
+    <div class="container">
+        <div class="work-txt">
+            <h2 class="hdng">Our process</h2>
+        </div>
+        <div class="work-boxes">
+            <div class="row">
+                <div class="col aos-init" data-aos="flip-left">
+                    <div class="wrk-content">
+                        <div class="wrk-box-txt">
+                            <h3 class="hdng-h3">Planning</h3>
+                            <p class="description sub">This phase involves gathering information, conducting
+                                research, and analyzing the needs of the project.</p>
+                            <div class="wrk-img"><img src="images/planning.png"  /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col aos-init" data-aos="flip-left">
+                    <div class="wrk-content">
+                        <div class="wrk-img sub"><img src="images/design.png"  /></div>
+                        <div class="wrk-box-txt">
+                            <h3 class="hdng-h3">Design</h3>
+                            <p class="description">This phase focuses on the user experience, functionality, and
+                                aesthetics of the project, ensuring that it meets the desired goals and
+                                requirements.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col aos-init" data-aos="flip-left">
+                    <div class="wrk-content">
+                        <div class="wrk-box-txt">
+                            <h3 class="hdng-h3">Development</h3>
+                            <p class="description sub">The development phase is where the project comes to life, and
+                                careful attention is given to coding standards, testing, and quality assurance to
+                                ensure a robust and functional final product.</p>
+                            <div class="wrk-img"><img src="images/development.png" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col aos-init" data-aos="flip-left">
+                    <div class="wrk-content">
+                        <div class="wrk-img sub"><img src="images/launch.png"  /></div>
+                        <div class="wrk-box-txt">
+                            <h3 class="hdng-h3">Launch</h3>
+                            <p class="description">The launch phase marks the introduction of the project to the
+                                target audience or users.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col aos-init" data-aos="flip-left">
+                    <div class="wrk-content">
+                        <div class="wrk-box-txt">
+                            <h3 class="hdng-h3">Maintenance</h3>
+                            <p class="description sub"> This involves monitoring and managing the project to ensure
+                                its continued functionality, performance, and security.</p>
+                            <div class="wrk-img"><img src="images/support.png"  /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- /// Our process-Section-end /// -->
+<!-- /// Testimonials-Section-start/// -->
+<div class="Testimonials-Section">
+    <div class="container">
+        <div class="test-cont">
+            <h2 class="hdng bta">Testimonials</h2>
+            <h3 class="black-test">Great Reviews</h3>
+            <!--<p class="test-para">97 Out Of 100 Clients Have Given Us A Five Star Rating On Google & Clutch</p>-->
+        </div>
+
+        <ul class="slider-Testimonial">
+            <li>
+                <div class="testimonial">
+                    <img class="width-class" src="images/testimonial_2.png">
+                    <p>
+                        "The design work delivered by this team was exceptional.
+                        They captured our vision perfectly and created a stunning user interface that is both
+                        visually appealing and intuitive
+                        to navigate. Our users have expressed their delight with the design,
+                        and it has significantly enhanced our brand image."
+                    </p>
+                    <div class="test-work"> <img src="images/star-icon.png"> </div>
+                    <h4>Michael Bole</h4>
+                    <h3></h3>
+                </div>
+            </li>
+            <li>
+                <div class="testimonial">
+                    <img src="images/testimonial_1.png" alt="Testimonial 1">
+                    <p>
+                        "I was impressed with the meticulous planning and attention to detail provided by this team.
+                        They took the time to understand our goals and requirements, resulting in a project that
+                        exceeded our expectations.
+                        Their professionalism and expertise made the entire process smooth and enjoyable."
+                    </p>
+                    <div class="test-work"> <img src="images/star-icon.png"> </div>
+                    <h4>Haresh Patel</h4>
+                    <h3></h3>
+
+                </div>
+            </li>
+            <li>
+                <div class="testimonial">
+                    <img src="images/testimonial4.png" alt="Testimonial 1">
+                    <p>
+                        "From the successful launch to ongoing maintenance, this team has been an invaluable
+                        partner.
+                        They have demonstrated a strong commitment to our project's success, ensuring its seamless
+                        operation and addressing any issues promptly."
+                    </p>
+                    <div class="test-work"> <img src="images/star-icon.png"> </div>
+                    <h4>Hanif Sohrab</h4>
+                    <h3></h3>
+
+                </div>
+            </li>
+
+            <li>
+                <div class="testimonial">
+                    <img class="width-class" src="images/testimonial_2.png">
+                    <p>
+                        "The design work delivered by this team was exceptional.
+                        They captured our vision perfectly and created a stunning user interface that is both
+                        visually appealing and intuitive
+                        to navigate. Our users have expressed their delight with the design,
+                        and it has significantly enhanced our brand image."
+                    </p>
+                    <div class="test-work"> <img src="images/star-icon.png"> </div>
+                    <h4>Michael Bole</h4>
+                    <h3></h3>
+                </div>
+            </li>
+            <li>
+                <div class="testimonial">
+                    <img src="images/testimonial_1.png">
+                    <p>
+                        "I was impressed with the meticulous planning and attention to detail provided by this team.
+                        They took the time to understand our goals and requirements, resulting in a project that
+                        exceeded our expectations.
+                        Their professionalism and expertise made the entire process smooth and enjoyable."
+                    </p>
+                    <div class="test-work"> <img src="images/star-icon.png"> </div>
+                    <h4>Haresh Patel</h4>
+                    <h3></h3>
+
+                </div>
+            </li>
+            <li>
+                <div class="testimonial">
+                    <img src="images/testimonial4.png">
+                    <p>
+                        "From the successful launch to ongoing maintenance, this team has been an invaluable
+                        partner.
+                        They have demonstrated a strong commitment to our project's success, ensuring its seamless
+                        operation and addressing any issues promptly."
+                    </p>
+                    <div class="test-work"> <img src="images/star-icon.png"> </div>
+                    <h4>Hanif Sohrab</h4>
+                    <h3></h3>
+
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+<!-- /// Case Study-Section-start /// -->
+<!-- <div class="Case Study-section">
+    <div class="container">
+        <div class="Case Study-contant">
+            <h2 class="hdng bta">Case Study</h2>
+            <p class="case-para">Loram Maintenance of Way, Inc. is a railroad maintenance equipment and
+                services provider. Loram provides track , </p>
+        </div>
+        <div class="Agile Methodology-section">
+            <div class="container">
+                <div class="Agile Methodology-main">
+                    <div class="">
+                        <div class="slider-container">
+                            <div class="slide slide-1"
+                                style="background-image: url('https://images.pexels.com/photos/746386/pexels-photo-746386.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
+                                <div class="content">
+                                    <h2>It is a long established</h2>
+                                    <p>Loram Maintenance of Way, Inc. is a railroad maintenance equipment and
+                                        services provider. Loram provides track maintenance services to freight,
+                                        passenger, </p>
+                                </div>
+                            </div>
+                            <div class="slide slide-2"
+                                style="background-image: url('https://images.pexels.com/photos/416676/pexels-photo-416676.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
+                                <div class="content">
+                                    <h2>Heading</h2>
+                                    <p>Loram Maintenance of Way, Inc. is a railroad maintenance equipment and
+                                        services provider. Loram provides track maintenance services to freight,
+                                        passenger, </p>
+                                </div>
+                            </div>
+                            <div class="slide slide-3"
+                                style="background-image: url('https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
+                                <div class="content">
+                                    <h2>It is a long established</h2>
+                                    <p>Loram Maintenance of Way, Inc. is a railroad maintenance equipment and
+                                        services provider. Loram provides track maintenance services to freight,
+                                        passenger, </p>
+                                </div>
+                            </div>
+                            <div class="slide slide-4"
+                                style="background-image: url('https://images.pexels.com/photos/373934/pexels-photo-373934.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
+                                <div class="content">
+                                    <h2>It is a long established</h2>
+                                    <p>Loram Maintenance of Way, Inc. is a railroad maintenance equipment and
+                                        services provider. Loram provides track maintenance services to freight,
+                                        passenger, </p>
+                                </div>
+                            </div>
+                            <div class="slide slide-5"
+                                style="background-image: url('https://images.pexels.com/photos/372098/pexels-photo-372098.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
+                                <div class="content">
+                                    <h2>It is a long established</h2>
+                                    <p>Loram Maintenance of Way, Inc. is a railroad maintenance equipment and
+                                        services provider. Loram provides track maintenance services to freight,
+                                        passenger, </p>
+                                </div>
+                            </div>
+                            <div class="slide slide-6"
+                                style="background-image: url('https://images.pexels.com/photos/340151/pexels-photo-340151.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
+                                <div class="content">
+                                    <h2>It is a long established</h2>
+                                    <p>Loram Maintenance of Way, Inc. is a railroad maintenance equipment and
+                                        services provider. Loram provides track maintenance services to freight,
+                                        passenger, </p>
+                                </div>
+                            </div>
+                            <div class="buttons-container">
+                                <button class="arrow left"> <i class="fa fa-arrow-left"></i> </button>
+                                <button class="arrow right"> <i class="fa fa-arrow-right"></i> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- /// Case Study-Section-End /// -->
+<!-- /// blog-Section-start /// -->
+<!-- <div class="latest-section">
+    <div class="container">
+        <div class="work-txt">
+            <h2 class="hdng">latest bolgs</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="img-contant">
+                    <div class="pick-up"> <img src="images/man1.jpg" alt="" /> </div>
+                    <div class="hd-cont"> <a href="">
+                            <p class="pra">Key Benefits of ASP.Net Core for Enterprise Applications</p>
+                        </a>
+                        <div class="calnder"> <a href=""> <span><i class="fa-solid fa-calendar-days"></i>25 Feb
+                                    2021</span> </a> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-contant">
+                    <div class="pick-up"> <img src="images/man2.jpg" /> </div>
+                    <div class="hd-cont"> <a href="">
+                            <p class="pra">Top 5 IoT Predictions for 2021 – What Future Holds?</p>
+                        </a>
+                        <div class="calnder"> <a href=""> <span><i class="fa-solid fa-calendar-days"></i>25 Feb
+                                    2021</span> </a> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-contant">
+                    <div class="pick-up"> <img src="images/man3.jpg" alt="" /> </div>
+                    <div class="hd-cont"> <a href="">
+                            <p class="pra">Key Benefits of ASP.Net Core for Enterprise Applications</p>
+                        </a>
+                        <div class="calnder"> <a href=""> <span><i class="fa-solid fa-calendar-days"></i>25 Feb
+                                    2021</span> </a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-2 ddd"> <a href="#">view more</a> </div>
+    </div>
+</div> -->
+<!--///  blog-Section-end /// -->
+<!-- /// Our Philosophy-Section-start /// -->
+<!-- <div class="Philosophy-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="Our Philosophy-cont">
+                    <h3 class="our-text">Our Philosophy</h3>
+                    <p>
+                        TTPL's robust R&D team is continually striving to improve existing solutions and develop new
+                        ones. TTPL aspires to deliver on commitments and outcomes by being honest and responsible to
+                        customers,
+                        shareholders, partners, and workers.
+                    </p>
+                    <p>
+                        We believe in providing the highest quality, on time, and at the lowest possible cost to our
+                        clients. We operate in a flow so that we can simply calibrate our clients' requirements,
+                        saving
+                        them time and
+                        efforts. We assist our clients in constructing their needs step by step, from inception to
+                        completion
+                    </p>
+                    <div class="btn-2"> <a href="our-philosophy.html">Read More</a> </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <img src="images/pehlopsy.jpg">
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- /// Our Philosophy-Section-end /// -->
+<!-- /// CONSULTATION-Section-start /// -->
+<!--<div class="CONSULTATION-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 alting">
+        <div class="NEED-CONSU"> <img src="images/clt.png" alt="" /> </div>
+      </div>
+      <div class="col-md-7">
+        <div class="CONSULTATION-cont">
+          <h2 class="text-org">We are here to answer your questions 24/7</h2>
+          <h3 class="our-text altd">NEED A CONSULTATION?</h3>
+          <div class="btn-2 sub"> <a href="">Contact Us</a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>-->
+<!-- /// CONSULTATION-Section-end /// -->

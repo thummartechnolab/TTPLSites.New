@@ -1,0 +1,644 @@
+@media only screen and (max-width: 767px) {
+    .industry-banner {
+        height: 50vh !important;
+    }
+	.title-inner-expert p {
+		font-size: 16px;
+	}
+	.inner-our p {
+		line-height: 26px;
+		font-size: 16px;
+	}
+    .industry-about {
+        padding: 30px 0;
+    }
+	.title-inner-expert h2 {
+		font-size: 22px;
+	}
+
+    .inner-about h2 {
+        font-size: 20px;
+        line-height: 26px;
+		padding: 5px 0 15px;
+    }
+    .inner-about p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .service-box h4 {
+        font-size: 18px;
+    }
+    .inner-about-picture {
+        margin: 30px 0 0;
+    }
+
+    .industry-sevice {
+        padding: 30px 0;
+    }
+
+    .title-industry h2 {
+        font-size: 22px;
+        width: 100%;
+    }
+
+    .title-industry {
+        padding: 0 0 30px;
+    }
+
+    .Exploring-section {
+        padding: 30px 0;
+    }
+
+    h2.title-class {
+        font-size: 22px;
+        width: 100%;
+    }
+
+    .Custom-helthcare {
+        padding: 30px 0;
+    }
+
+    .title-custom h2 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .title-custom p {
+        width: 100%;
+    }
+
+    .healthcare-tab button.tablinks {
+        width: 100%;
+        height: 60px;
+    }
+
+    .tab-inner-content p {
+        font-size: 18px;
+        line-height: 26;
+        line-height: 26px;
+    }
+
+    .tab-inner-content ul {
+        display: block;
+        width: 100%;
+    }
+
+    .tab-inner-content li {
+        width: 100%;
+    }
+
+    .optimizing-section {
+        padding: 30px 0;
+    }
+
+    .title-opt h2 {
+        font-size: 22px;
+    }
+
+    .title-opt p {
+        width: 100%;
+    }
+
+    .our-healthcare {
+        padding: 30px 0;
+    }
+
+    .inner-our h2 {
+        font-size: 20px;
+    }
+
+    .iot-based {
+        padding: 30px 0;
+    }
+
+    .title-iot h2 {
+        font-size: 22px;
+    }
+
+    .healthcare-listing {
+        display: block;
+    }
+
+    .healthcare-listing ul {
+        margin: 0;
+    }
+
+    .explore-healthcar {
+        padding: 30px 0;
+    }
+
+    h2.title-cls {
+        font-size: 22px;
+    }
+
+    .explor-title p {
+        width: 100%;
+    }
+
+    .explor-title {
+        padding: 0 0 30px;
+    }
+    .inner-industry-heading p {
+        width: 100%;
+        font-size: 16px;
+    }
+   
+    
+    .inner-industry-heading h2 {
+        font-size: 22px;
+    }
+    .antag-uild {
+        margin: 0 0 15px;
+    }
+    .advantage-building-section {
+        padding: 30px 0;
+    }
+    
+    .Our-Expertise-logistics {
+        padding: 30px 0;
+    }
+    .rtise-logist-box {
+        padding: 25px 15px 25px;
+        min-height: auto;
+        margin: 0 0 15px;
+        text-align: center;
+    }
+    .eleaning-box {
+        min-height: auto;
+        margin: 0  0 15px;
+    }
+    .elearning-app {
+        padding: 30px 0 30px;
+    }
+    .ind-detail {
+        margin: 0 0 15px;
+    }
+    .explore-box span {
+        right: 50px;
+        bottom: 26px;
+    }
+    .explore-box h4 {
+        width: 60%;
+    }
+    
+    .vertical-slider {
+        padding: 35px 0 0;
+    }
+    .effective-elearning .inner-industry-heading p {
+        width: 100%;
+    }
+    .elearning-app {
+        padding: 30px 0;
+    }
+    .inner-industry-heading h2 {
+        font-size: 22px;
+    }
+    .mobile-learning-box ul {
+        padding: 20px 20px 5px 60px;
+    }
+    .eleaning-box {
+        min-height: auto;
+        margin: 0 0 15px;
+    }
+    .mobile-learning {
+        padding: 30px 0;
+    }
+    .mobile-learning  .title-industry p {
+        width: 100%;
+		font-size: 16px;
+    }
+	.inner-industry-heading h2 br{
+		display:none;
+	}
+    
+    .mobile-learning-box {
+        margin: 0 0 15px;
+    }
+    .effective-elearning {
+		padding: 30px 0;
+		overflow: hidden;
+	}
+    .our-expertise-education {
+        padding: 30px 0;
+    }
+    
+    
+    .opt-content {
+        margin: 0 0 25px;
+    }
+	
+    .real-estate-banner {
+        height: 50vh !important;
+    }
+    .legal-banner {
+        height: 50vh !important;
+    }
+    .hospitality-banner {
+        height: 50vh !important;
+    }
+    .education-banner {
+        height: 50vh !important;
+    }
+    .inner-our {
+        padding-right: 0px;
+    }
+    .eleaning-box h4 {
+        font-size: 20px;
+    }
+    .eleaning-box p {
+        padding: 0 0 10px;
+    }
+    .ind-detail h3 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .title-iot p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .effect-strat h4 {
+        font-size: 20px;
+        margin: 15px 0 10px;
+    }
+	.explore-box {
+		width: 100%;
+		height: 350px;
+	}
+	.industry-faq .faq h2 {
+		font-size: 22px;
+	}
+	.antag-uild p {
+		font-size: 18px;
+	}
+	.industry-sevice .row {
+    row-gap: 15px;
+}
+.industry-sevice .service-box {
+    padding: 30px 20px;
+}
+
+	/*
+	.logistics-banner:after {
+        position: absolute;
+        content: '';
+        background: #000;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .7;
+ 
+    }
+	.fintech-banner:after {
+        background: #000;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        left: 0;
+        content: '';
+        width: 100%;
+        opacity: .7;
+    }
+	.industry-banner:after {
+        background: #272121;
+        opacity: .5;
+    }
+    .real-estate-banner:after {
+        background: #000;
+        opacity: .7;
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+	*/
+body .real-estate-banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100% !important;
+}
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /****header style start****/
+    .section-2 {
+        position: sticky;
+        top: -1px;
+    }
+    .section-2 {
+        padding: 20px 0;
+    }
+    .section-2 .col-md-7 {
+        position: absolute;
+        right: 0px;
+        width: 100%;
+    }
+    .section-2 .col-md-7 button.navbar-toggler {
+        right: 15px;
+        position: absolute;
+    }
+    .section-2 .col-md-7 .navbar-expand-lg .navbar-nav .dropdown-menu {
+       
+        box-shadow: none !important;
+        padding: 0 0;
+        margin-top: 0px;
+        display: block;
+        border: 0;
+    }
+    .technology-drop .dropdown-menu .menu-sub-box h3 {
+        background: #fff;
+        display: block;
+        padding: 5px;
+        color: #201f1f;
+        font-weight: 700;
+    }
+    .section-2 .col-md-7 nav.navbar.navbar-expand-lg.navbar-dark .container-fluid {
+        justify-content: right !important;
+        left: 18px;
+    }
+    .section-2 .col-md-7 .navbar-collapse {
+        top: 40px;
+        position: absolute;
+        width: 100%;
+        background: #201f1f;
+        padding: 30px;
+    }
+    .section-2 .col-md-2 {
+        width: 35% !important;
+    }
+    .section-2 .col-md-7 .nav-link.dropdown-toggle {
+        display: flex;
+        justify-content: space-between;
+    }
+    .section-2 a.nav-link.dropdown-toggle+ul.dropdown-menu {
+        display: none !important;
+    }
+    
+    .section-2 a.nav-link.dropdown-toggle.show+ul.dropdown-menu {
+        display: block !important;
+    }
+ /****header style start****/
+
+	.eleaning-box {
+		min-height: auto;
+	}
+	.eleaning-box p {    
+		padding: 0 0 15px;
+	}
+	.inner-industry-heading h2 br{
+		display: none;
+	}
+    .services-saction-banner.industry-banner {
+        height: 40vh;
+    }
+    .title-industry h2 {
+        width: 100%;
+    }
+    h2.title-class {
+        width: 100%;
+    }
+    .title-custom p {
+        width: 100%;
+    }
+    .title-opt p {
+        width: 100%;
+    }
+    .inner-our h2 {
+        font-size: 26px;
+    }
+    .explor-title p {
+        width: 100%;
+    }
+    .expl-picture img {
+        width: 100%;
+    }
+    .healthcare-tab button.tablinks {
+        width: 46%;
+        margin: 0px 5px 10px;
+    }
+    .tab-inner-content ul {
+        display: block;
+    }
+    .tab-inner-content li {
+        width: 100%;
+    }
+    .optimizing-section .row {
+        row-gap: 30px;
+    }
+    .industry-about .col-md-6 {
+        width: 100%;
+    }
+    .inner-about-picture {
+        margin: 50px 0px 0px 0px;
+    }
+    .logistics-banner {
+        height: 50vh;
+        background-position: 50% 100%;
+    }
+    
+    
+    .logistics-banner .container {
+        z-index: 9999;
+        position: relative;
+    }
+    .advantage-building-section .row {
+        row-gap: 50px;
+    }
+    .Our-Expertise-logistics .row {
+        row-gap: 20px;
+    }
+    .Our-Expertise-logistics .row .col-sm {
+        flex: 1 0 33%;
+    }
+    .rtise-logist-box {
+        text-align: center;
+        min-height: auto;
+    }
+    
+    .elearning-app .col-md-4 {
+        width: 50%;
+    }
+
+    .elearning-app .row {
+        row-gap: 25px;
+    }
+    .explore-healthcar .col-sm {
+        flex: 1 0 33%;
+    }
+    .explore-box h4 {
+        width: 70%;
+    }
+    .explore-box p {
+        width: 65%;
+        margin: 0 auto;
+    }
+    .explore-box {
+        width: 350px;
+		height: 350px;
+    }
+    .fintech-banner {
+        height: 60vh;
+        background-position: 75% 100%;
+    }
+    
+    
+    .fintech-banner .container {
+        z-index: 9999;
+        position: relative;
+ 
+    }
+    .mobile-learning .col-md-4 {
+        width: 50%;
+    }
+    .mobile-learning .row {
+        row-gap: 30px;
+    }
+    .effective-elearning .inner-industry-heading p {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .our-expertise-education .col-md-4 {
+        width: 50%;
+    }
+    .real-estate-banner {
+        height: 50vh;
+        background-position: 70% 100%;
+    }
+    
+    .services-saction-banner {
+        position: relative;
+    }
+    
+    .services-saction-banner .container {
+        position: relative;
+        z-index: 999;
+    }
+    .inner-industry-heading p {
+        width: 85%;
+    }
+    .mobile-learning  .title-industry p {
+        width: 100%;
+    }
+    
+    .media-banner {
+        height: 50vh;
+    }
+    .ecommerce-banner {
+        height: 60vh;
+    }
+    
+    .education-banner {
+        height: 50vh;
+    }
+    .hospitality-banner {
+        height: 50vh;
+        background-position: 75% 100%;
+    }
+    .legal-banner {
+        height: 50vh;
+    }
+    .Lifestyle-banner {
+        height: 60vh;
+    }
+    .manufactring-banner {
+        height: 60vh;
+    }
+    /*
+	.logistics-banner:before {
+        width: 100%;
+        height: 100%;
+        background: #000;
+        content: '';
+        position: absolute;
+        top: 0;
+        opacity: .55;
+    }
+	.fintech-banner:before {
+        width: 100%;
+        height: 100%;
+        background: #000;
+        content: '';
+        position: absolute;
+        top: 0;
+        opacity: .65;
+    }
+	.real-estate-banner:after {
+        background: #000;
+        opacity: .7;
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+	.ecommerce-banner:after {
+        background: #000;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        opacity: 0.5;
+    }
+	.industry-banner:after {
+        background: #061748;
+        opacity: 0.53;
+    }
+    .hospitality-banner:after {
+        width: 100%;
+        height: 100%;
+        background: #000;
+        top: 0;
+        left: 0;
+        position: absolute;
+        content: '';
+        opacity: .7;
+    }
+    .legal-banner:after {
+        background: #000;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        position: absolute;
+        opacity: .6;
+    }
+    .manufactring-banner:after {
+        background: #000;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        content: '';
+        position: absolute;
+        opacity: 0.6;
+    }
+    .media-banner:after {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: #000;
+        content: '';
+        position: absolute;
+        opacity: .5;
+    }*/
+    .inner-our {
+        padding-right: 20px;
+    }
+	
+}

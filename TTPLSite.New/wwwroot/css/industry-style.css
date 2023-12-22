@@ -1,0 +1,1110 @@
+.services-saction-banner h2 {
+    color: #000;
+}
+.services-saction-banner p {
+    color: #000;
+}
+
+.industry-banner {
+    background: url(../images/health-care/healthcare-banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.industry-banner:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #C8CCD8;
+    opacity: 0.13;
+
+}
+.industry-banner .container{
+    position: relative;
+    z-index: 999;
+}
+.inner-about h5 {
+    color: #F06115;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+    width: 100%;
+    display: inline-block;
+}
+.inner-about h2 {
+    color: #070707;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    margin: 0;
+    width: 100%;
+    display: block;
+    padding: 12px 0 18px;
+}
+.inner-about p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #212529;
+}
+.inner-about h2 span {
+    font-weight: 700;
+}
+.industry-about {
+    padding: 87px 0;
+    background-color: #fff;
+}
+.inner-about-picture {
+    margin: 0 0px 0px 30px;
+}
+.inner-about-picture img {
+    width: 100%;
+}
+.industry-sevice {
+    padding: 60px 0;
+    background: url(../images/health-care/service-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title-industry h2 {
+    color: #F06115;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 auto;
+    width: 70%;
+    display: block;
+}
+
+.title-industry h2 span {
+    font-weight: 700;
+
+}
+.title-industry {
+    padding: 0 0 50px;
+}
+.industry-sevice .row {
+    row-gap: 24px;
+}
+.service-box h4 {
+    color: #070707;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    padding: 15px 0  10px;
+}
+.optimizing-section {
+    padding: 66px 0 68px;
+    background: #fff;
+}
+.title-opt h2 {
+    color: #070707;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    width: 100%;
+    display: inline-block;
+    padding: 0 0 18px;
+}
+
+.title-opt p {
+    width: 77%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+	color:#212529;
+}
+.title-opt {
+    padding: 0 0 40px;
+}
+
+.picture-opt {
+    background: url(../images/health-care/yellow-circle.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+}
+.opt-content h4 {
+    color: #070707;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    padding: 10px 0 6px;
+}
+.opt-content p {
+    font-size: 14px;
+    margin: 0;
+}
+.opt-content {
+    text-align: center;
+}
+.picture-opt.opt-blue {
+    background: url(../images/health-care/circle-2.png);
+    background-size: contain;
+}
+.opt-yellow {
+    background: url(../images/health-care/circle-3.png);
+    background-size: contain;
+
+}
+.title-custom h2 {
+    color: #070707;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 54px; 
+    margin: 0;
+    width: 100%;
+    display: inline-block;
+    padding: 0 0 18px;
+}
+.title-custom h2 span {
+    font-weight: 700;
+}
+.title-custom p {
+    width: 71%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title-custom {
+    padding: 0 0 45px;
+}
+.healthcare-tab .active {
+    color: #fff !important;
+    border-radius: 11px;
+    background: #f06115 !important;
+}
+
+.healthcare-tab button.tablinks {
+    padding: 16px 18px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 2px 6px 13px -2px rgba(0, 0, 0, 0.03);
+    font-size: 18px;
+    text-transform: capitalize;
+    border: none;
+    color: #212529;
+}
+
+
+.tab-inner-content ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.tab-inner-content li {
+    color: #F06115;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    list-style: none;
+    width: 33%;
+    position: relative;
+    padding: 0 0 20px;
+}
+.tab-inner-content li:after {
+    background: url(../images/health-care/ckeck.png);
+    content: '';
+    position: absolute;
+    left: -35px;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+}
+.tab-inner-content p {
+    color: #070707;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px;
+    margin: 0;
+    padding: 30px 0 30px;
+}
+.tab-inner-pic {
+    padding: 30px 0 10px;
+}
+
+.tab-inner-pic img {
+    width: 100%;
+}
+.Custom-helthcare {
+    padding: 80px 0;
+    background: radial-gradient(50% 50% at 50% 50%, #FAFAFA 0%, #F8F8F8 100%);
+    width: 100%;
+    display: inline-block;
+}
+.iot-based {
+    padding: 66px 0;
+    background: linear-gradient(92deg, rgba(106, 160, 200, 0.30) 2.16%, rgba(150, 185, 220, 0.30) 51.41%);
+}
+.title-iot {
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+.title-iot h2 {
+    color: #070707;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    padding: 0 0 18px;
+}
+
+.title-iot h2 span {
+    font-weight: 700;
+}
+
+.healthcare-listing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.healthcare-listing li {
+    list-style: none;
+    color: #212529;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 0;
+    position: relative;
+}
+.healthcare-listing li:before {
+    content: '';
+    background: url(../images/health-care/check-black.png);
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    left: -30px;
+    background-repeat: no-repeat;
+}
+.explore-box {
+    background: url(../images/health-care/Key-Benefits-1.png);
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 330px;
+    text-align: center;
+    padding: 26px 0 0;
+}
+.bg-explore-2 {
+    background: url(../images/health-care/Key-Benefits-2.png);
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 330px;
+    text-align: center;
+    padding: 26px 0 0;
+}
+.bg-explore-3 {
+    background: url(../images/health-care/Key-Benefits-3.png);
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 330px;
+    text-align: center;
+    padding: 26px 0 0;
+}
+.bg-explore-4 {
+    background: url(../images/health-care/Key-Benefits-4.png);
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 330px;
+    text-align: center;
+    padding: 26px 0 0;
+}
+.bg-explore-5 {
+    background: url(../images/health-care/Key-Benefits-5.png);
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 330px;
+    text-align: center;
+    padding: 26px 0 0;
+}
+.explore-box h4 {
+    color: #070707;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 10px 0 0px;
+    width: 62%;
+    margin: 0 auto;
+}
+.explore-box p {
+    font-size: 16px;
+    width: 70%;
+    margin: 0 auto;
+    color: #212529;
+    line-height: 22px;
+    padding: 10px 0 0;
+}
+.explore-healthcar .row {
+    row-gap: 25px;
+}
+.explore-healthcar {
+    padding: 80px 0 90px;
+    background: #F5FAFC;
+}
+.explore-box {
+    position: relative;
+    padding: 50px 0 0;
+}
+.explore-box span {
+    position: absolute;
+    right: 50px;
+    bottom: 27px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 28px;
+    z-index: 999;
+}
+
+
+
+
+
+
+h2.title-cls {
+    color: #F06115;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+h2.title-cls span {
+    font-weight: 700;
+}
+.explor-title p {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+.explor-title {
+    padding: 0 0 50px;
+}
+
+
+
+
+.azure-gti-git {
+    padding: 70px 0 50px;
+}
+
+.azure-gti-git ul li a.active {
+    border-radius: 11px;
+    background: #F06115;
+    box-shadow: 6px 2px 13px -2px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    height: 53px;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13px;
+}
+.azure-gti-git ul li a {
+    border-radius: 11px;
+    background: #FFF;
+    box-shadow: 2px 6px 13px -2px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    height: 53px;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 10px;
+    color: #828282;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0px 14px;
+    line-height: 53px;
+}
+.azure-gti-git ul li {
+    width: 100%;
+}
+.azure-gti-git ul.nav.nav-tabs {
+    border-bottom: none;
+}
+
+.azure-gti-git .devops-tabs img {
+    width: 87%;
+}
+
+.azure-gti-git .devops-tabs {
+    width: 81%;
+    margin: 0 auto;
+}
+
+.listing-care-health {
+    display: flex;
+}
+
+.listing-care-health ul {
+    padding: 0;
+}
+
+.listing-care-health ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #212529;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding-right: 97px;
+}
+
+.listing-care-health ul li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 14px;
+}
+.content-care-health {
+    margin-top: 42px;
+}
+.content-care-health h3 {
+    color: #070707;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+
+
+
+
+.Exploring-section {
+    padding: 80px 0 80px;
+    background: #fff;
+}
+h2.title-class {
+    color: #070707;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 70%;
+    margin: 0 auto;
+}
+
+h2.title-class span {
+    font-weight: 700;
+}
+.title-exp {
+    margin: 0 0 50px;
+}
+.expl-picture img {
+    border-radius: 11px;
+}
+
+.expl-contnet h3 {
+    color: #070707;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    padding: 20px 0 12px;
+}
+.expl-contnet p {
+    font-size: 16px;
+    color: #212529;
+    line-height: 26px;
+    margin: 0;
+}
+.our-healthcare {
+    padding: 96px 0 80px;
+    background: #F8F8F8;
+}
+.explore-healthcar .container {
+    min-width: 100% !important;
+}
+.ind-detail h3 {
+    color: #070707;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+.ind-detail {
+    padding: 30px;
+    background: #fff;
+	margin:15px 0;
+}
+
+.ind-detail p {
+    color: #212529;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    margin: 0;
+}
+
+.inner-our h5 {
+    color: #F06115;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.inner-our h2 {
+    color: #070707;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 12px 0 18px;
+}
+.ind-detail-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #ffb086;
+    margin: 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-industry .accordion button {
+    padding: 15px 48px 15px 24px;
+    min-height: 95px;
+    border-radius: 11px;
+    background: #FFF;
+    box-shadow: 2px 6px 13px -2px rgba(0, 0, 0, 0.12);
+}
+.faq-industry .accordion-content {
+    border-radius: 0 0 11px 11px;
+    background: #FFF;
+    box-shadow: 2px 6px 13px -2px rgba(0, 0, 0, 0.12);
+}
+.faq-industry  .accordion button[aria-expanded='true'] {
+    padding: 0px 48px 0px 24px;
+    border-radius: 11px 11px 0 0;
+}
+.vertical-slider{
+    padding: 25px 0;    
+}
+
+/****[educaation]*****/
+.education-sevice {
+    padding: 60px 0;
+    background: url(../images/education/education-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.education-banner {
+    background: url(../images/education/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.inner-industry-heading h2 {
+    color: #F06115;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    padding: 0 0 18px;
+}
+
+.inner-industry-heading h2 span {
+    font-weight: 700;
+}
+
+.inner-industry-heading {
+    text-align: center;
+    margin:0 0 50px;
+}
+
+.inner-industry-heading p {
+    width: 61%;
+    margin: 0 auto;
+    font-size: 18px;
+	color:#212529;
+}
+.elearning-app {
+    padding: 80px 0 80px;
+}
+.eleaning-box h4 {
+    color: #070707;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 15px 10px  10px;
+}
+
+.eleaning-box p {
+    margin:0 10px 0;
+    color: #212529;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+.eleaning-box {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 2px 6px 13px -2px rgba(0, 0, 0, 0.07);
+    min-height: 500px;
+}
+.eleaning-box img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+.mobile-learning-box{
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 2px 6px 13px -2px rgba(0, 0, 0, 0.07); 
+}
+.mobile-learning-box h3 {
+    background: #000;
+    display: block;
+    width: 100%;
+    color: #F8F8F8;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 17px 24px 18px;
+}
+.mobile-learning-box li {
+    position: relative;
+    list-style: none;
+    color: #212529;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 25px;
+}
+
+.mobile-learning-box li:after {
+    background: url(../images/education/check.png);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -35px;
+    width: 20px;
+    height: 20px;
+}
+.mobile-learning-box ul {
+    padding: 20px 20px 30px 60px;
+    margin: 0;
+}
+.mobile-learning {
+    padding: 76px 0 65px;
+    background: #F8F8F8;
+}
+.mobile-learning  .title-industry p {
+    width: 82%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0 0;
+	color:#212529;
+	font-size:18px;
+}
+.effect-strat.slick-slide {
+    border-radius: 5px;
+    border: 1px solid #DADADA;
+    background: #FCFCFC;
+    padding: 24px;
+}
+.effect-strat h4 {
+    color: #070707;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 24px 0 18px;
+}
+.effect-strat li {
+    color: #212529;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 20px;
+}
+.effective-elearning {
+    background: #fff;
+    padding: 80px 0;
+}
+.effective-elearning .inner-industry-heading p {
+    width: 85%;
+    margin: 0 auto;
+}
+.our-expertise-education {
+    padding: 48px 0 88px;
+    background: #F5FAFC;
+}
+.title-inner-expert h2 {
+    color: #070707;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 18px;
+}
+.title-inner-expert h2 span {
+    font-weight: 700;
+}
+.title-inner-expert p {
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+	color:#212529;
+}
+.perti-box img {
+    width: 100%;
+}
+.inner-our p {
+    line-height: 28px;
+    font-size: 18px;
+	color:#212529;
+}
+.perti-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.perti-box h4 {
+    position: absolute;
+    bottom: 20px;
+    width: 80%;
+    left: 30px;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; 
+    text-transform: uppercase;
+    z-index: 999;
+}
+.perti-box:after {
+    opacity: 0.5;
+    position: absolute;
+    content: '';
+    background: #000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.our-expertise-education .row{
+    row-gap: 30px;
+}
+
+
+.perti-box:hover img {
+    transform: scale(1.3);
+    transition: 1s ease-in-out;
+}
+
+
+
+.perti-box:hover h4 {
+    bottom: 50px;
+    transition: 1s;
+}
+.industry-faq{
+    background: #fff;
+}
+.title-inner-expert {
+    padding: 0 0 50px;
+}
+
+.logistics-banner {
+    width: 100vw;
+    background: url(../images/logistics/banner.png);
+    background-position: 100%;
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.antag-uild-icon {
+    background: url(../images/logistics/Strong-Documentation.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 190px;
+    background-position: center;
+    padding: 12px;
+    margin: 0 auto;
+}
+.antag-uild-icon.vanta-2 {
+    background: url(../images/logistics/Quality-RESOURCES.png);
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 190px;
+    background-position: center;
+    background-size: contain;
+}
+.antag-uild-icon.vanta-3 {
+    background: url(../images/logistics/Realistic-Timelines.png);
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 190px;
+    background-position: center;
+    background-size: contain;
+}
+.antag-uild-icon.vanta-4 {
+    background: url(../images/logistics/Fake-Commitment.png);
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 190px;
+    background-position: center;
+    background-size: contain;
+}
+.antag-uild-icon.vanta-5 {
+    background: url(../images/logistics/QuickAssestents.png);
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 190px;
+    background-position: center;
+    background-size: contain;
+    padding: 15px 25px;
+}
+
+.antag-uild p {
+    color: #070707;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; 
+    margin: 0 auto;
+    width: 75%;
+}
+
+.advantage-building-section {
+    background: #fff;
+    padding: 90px 0 90px;
+}
+.Our-Expertise-logistics {
+    background: #FAFCFF;
+    padding: 80px 0 80px;
+}
+.Our-Expertise-logistics .inner-industry-heading p {
+    width: 98%;
+    margin: 0 auto;
+}
+.rtise-logist-box {
+    border-radius: 5px;
+    background: #fff;
+    padding: 40px 15px 40px;
+    min-height: 215px;
+}
+.rtise-logist-box p {
+    color: #212529;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 20px 0 0;
+}
+
+
+/***fintech-page***/
+.fintech-banner {
+    background: url(../images/finttech/banner.png);
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.inner-our {
+    position: sticky;
+    top: 10rem;
+}
+.real-estate-banner {
+    background: url(../images/real-estate/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.mobile-learning-box p {
+    padding: 0 24px 15px;
+    margin: 0;
+    font-size: 16px;
+    color: #000;
+    line-height: 24px;
+    font-weight: 400;
+	color:#212529;
+}
+.media-banner{
+    background: url(../images/media/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ecommerce-banner {
+    background: url(../images/ecommerce/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;;
+}
+.Lifestyle-banner {
+    background: url(../images/lifestyle/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;;
+}
+.manufactring-banner {
+    background: url(../images/manufacturing/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;;
+}
+.hospitality-banner {
+    background: url(../images/hospitality/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;;
+}
+.legal-banner {
+    background: url(../images/legal/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;;
+}
+.legal-sevice {
+    padding: 60px 0;
+    background: url(../images/legal/service-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hospitality-service{
+    padding: 60px 0;
+    background: url(../images/hospitality/service-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.manufacturing-service{
+    padding: 60px 0;
+    background: url(../images/manufacturing/service-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.lifestyle-sevice{
+    padding: 60px 0;
+    background: url(../images/legal/service-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.media-sevice{
+    padding: 60px 0;
+    background: url(../images/media/service-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.real-sevice{
+    padding: 60px 0;
+    background: url(../images/real-estate/service-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.comerce-sevice{
+    padding: 60px 0;
+    background: url(../images/ecommerce/service-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.fintec-sevice{
+    padding: 60px 0;
+    background: url(../images/finttech/service-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logistic-sevice{
+    padding: 60px 0;
+    background: url(../images/logistics/service-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.title-iot p {
+    font-size: 18px;
+    line-height: 28px;
+	color:#212529;
+}
+.industry-btn a {
+    padding: 15px 30px;
+    background-color: #F06115;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.industry-btn {
+    padding: 20px 0 0;
+}
+.effect-strat.slick-slide ul {
+    padding: 0 0px 0px 15px;
+}
