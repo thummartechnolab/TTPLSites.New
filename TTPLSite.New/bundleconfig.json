@@ -1,0 +1,32 @@
+[
+  {
+    "outputFileName": "wwwroot/css/site.min.css",
+    "inputFiles": [
+      "wwwroot/css/custom-style.css",
+      "wwwroot/css/industry-style.css",
+      "wwwroot/css/mobile.css",
+      "wwwroot/css/mobile-industry-style.css",
+      "wwwroot/css/slide-style.css",
+      "wwwroot/css/style.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/site.min.js",
+    "inputFiles": [
+      "wwwroot/js/custom-all.js",
+      "wwwroot/js/slick.js",
+      "wwwroot/js/slick-slide.js",
+      "wwwroot/js/style.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  }
+]
