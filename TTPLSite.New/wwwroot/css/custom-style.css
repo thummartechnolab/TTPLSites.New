@@ -585,7 +585,9 @@ input:focus-visible + label {
     font-weight: 400;
     padding: 0px 0px 0px 20px;
 }
-
+.row.angu_dev {
+    row-gap: 25px;
+}
 
 
 
@@ -619,7 +621,7 @@ input:focus-visible + label {
 }
 .inner-flag p {
     margin: 0 0 0px 10px;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -928,19 +930,19 @@ h5.rect-title {
 .tech-box {
     border-radius: 11px;
     background: #FAFAFA;
-    padding: 66px 34px 60px;
+    padding: 30px 34px 30px;
     width: 100%;
     display: inline-block;
+    height: -webkit-fill-available;
 }
-
 .tech-box h2 {
     color: #F06115;
     font-size: 22px;
     font-weight: 700;
-    line-height: 44px;
+    line-height: 28px;
     width: 100%;
     display: inline-block;
-    margin: 8px 0 0;
+    margin: 8px 0 10px;
 }
 .tech-box p {
     color: #707174;
@@ -1694,8 +1696,8 @@ a.bnt-gt {
 	margin: 15px 0 0 ;
 }
 .angular-evolution .evolu-box {
-    min-height:520px;
-    padding: 66px 34px 0px;
+    min-height: auto;
+    padding: 70px 34px 70px;
 }
 .angular-section-6 {
     background: url(../images/angular/bg-angular.png);
@@ -1893,7 +1895,7 @@ a.bnt-gt {
     list-style: none;
 }
 .react-box.vuejs-box {
-    min-height: 320px;
+    min-height: -webkit-fill-available;
 }
 .vuejs-body h5 {
     width: 90%;
@@ -2273,14 +2275,14 @@ a.bnt-gt {
     margin: 0 0 20px;
     position: absolute;
     top: -40px;
-    left: 76px;
+    left: 54px;
 }
 .our-process-heading h2 {
     color: #F06115;
     text-align: center;
-    font-size: 60px;
+    font-size: 48px;
     font-weight: 700;
-    margin: 0;
+    margin: 0 0 15px;
     width: 100%;
     display: inline-block;
 }
@@ -2364,7 +2366,7 @@ a.bnt-gt {
 }
 .iner-box h4 {
     color: #21A371;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 24px;
     width: 100%;
@@ -2373,7 +2375,7 @@ a.bnt-gt {
 }
 .box-two {
 	 background: url(../images/ui-ux/line-litegreen.png);
-	 background-size: 100% !important;
+	 background-size: contain !important;
 	 background-repeat: no-repeat;
 	 width: 100%;
 	 position: relative;
@@ -2503,15 +2505,15 @@ a.bnt-gt {
     margin: 0 0 55px;
 }
 .web-heading{
-	margin:0 0 50px;
+	margin:0 0 30px;
 }
 .web-heading h2 {
-    font-size: 50px;
+    font-size: 38px;
     font-style: normal;
     font-weight: 700;
-    line-height: 61px;
+    line-height: 42px;
     margin: 0 0 25px;
-	color: #F06115;
+    color: #F06115;
 }
 .web-heading p {
     color: #707174;
@@ -2775,7 +2777,7 @@ a.bnt-gt {
     width: 24%;
     border-radius: 11px;
     background: #FAFAFA;
-    padding: 52px 25px 30px;
+    padding: 30px 25px 30px;
     display: inline-block;
 }
 .net-inner h3 {
@@ -3757,8 +3759,8 @@ p.para-php {
     padding: 105px 0 175px;
 }
 .nodejs-slider .evolu-box {
-    min-height: 520px;
-    padding: 50px 48px 0;
+    min-height: auto;
+    padding: 50px 48px 60px;
 }
 .nodejs-slider .inner-head-white p {
     width: 78%;
@@ -3993,6 +3995,7 @@ p.para-php {
     list-style: none;
     padding-left: 40px;
     position: relative;
+    width: 30%;
 }
 .choose-ruby-heading ul li:after {
     position: absolute;
@@ -4169,7 +4172,8 @@ p.para-php {
     
 }
 .Laravel-evolution  .evolu-box {
-    min-height: 535px;
+    min-height: auto;
+    padding: 60px 48px;
 }
 .laravel-providing-section2 {
     padding: 92px 0 126px;
@@ -4260,7 +4264,7 @@ p.para-php {
 }
 .inner-pyton-heading h2 {
     color: #F06115;
-    font-size: 60px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -4893,7 +4897,7 @@ h6.backend-page {
 .app-inner-box h4 {
     color: #000;
     text-align: center;
-    font-size: 28px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -6195,7 +6199,7 @@ justify-content: center;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
-    line-height: 30px; 
+    line-height: 42px; 
     text-align: center;
     margin: 0 0 37px;
 }
@@ -6506,10 +6510,10 @@ justify-content: center;
 
 .inner-process-box p {
     color: #707174;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px; 
+    line-height: 22px; 
     padding: 0px 10px 0 28px;
 }
 .azure-section {
@@ -7395,4 +7399,236 @@ p.main-1 {
 }
 .foter-icon:hover{
     background: #F06115;
+}
+
+
+/*automation style-box */
+.testing-process-new {
+    text-align: center;
+    position: relative;
+}
+.testing-content {
+    display: flex;
+}
+.testing-content h4 {    
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.testing-content h4:nth-child(1) {
+    position: absolute;
+    color:#7b3dd9;
+    top: 72%;
+    width: 18%;
+    text-align: left;
+}
+.testing-content h4:nth-child(2) {
+    position: absolute;
+    color: #ff9d00;
+    top: 30%;
+    left: 5rem;
+}
+.testing-content h4:nth-child(3) {
+    position: absolute;
+    color: #ff3654;
+    left: 45%;
+    top: -15%;
+    width: 20%;
+    text-align: left;
+}
+.testing-content h4:nth-child(4) {
+    position: absolute;
+    right: 0%;
+    top: 30%;
+    color: blue;
+    width: 22%;
+    text-align: left;
+}
+.testing-content h4:nth-child(5) {
+    position: absolute;
+    right: 0;
+    top: 72%;
+    color: #00b59a;
+    width: 15%;
+    text-align: left;
+}
+.testing-middle-content h3 {
+    bottom: 15%;
+    left: 40%;
+    font-size: 60px;
+    width: 20%;
+    position: absolute;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #f06115;
+}
+.inner-box-content {
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 8%;
+}
+
+.cloud-box {
+    position: relative;
+}
+
+.inner-box-content p {
+    color: #0F0D0D;
+    text-align: center;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin: 0 auto;
+    padding: 13px 0 0;
+    display: block;
+    width: 76%;
+}
+.cloud-box:nth-child(1) {
+    left: 45%;
+    top: 4%;
+}
+
+.cloud-box:nth-child(2) {
+    left: 5%;
+    top: -6%;
+}
+
+.cloud-box:nth-child(3) {
+    left: 45%;
+    bottom: 16%;
+}
+.cloud-pic {
+    padding: 10rem 0 0;
+    right: 22%;
+    position: relative;
+}
+.cloud-box-center {
+    position: relative;
+    left: 15%;
+}
+.cloud-box-right {
+    position: relative;
+}
+.cloud-box-right:nth-child(1) {
+    right: 15%;
+    top: 4%;
+}
+.cloud-box-right:nth-child(2) {
+    left: 32%;
+    bottom: 8%;
+}
+.cloud-box-right:nth-child(3) {
+    right: 15%;
+    bottom: 18%;
+}
+.exper-heaing {
+    margin: 0 0 110px;
+}
+.testing-icon img:nth-child(1) {
+    position: absolute;
+    bottom: 22%;
+    left: 21%;
+}
+.testing-icon img:nth-child(2) {
+    position: absolute;
+    bottom: 60%;
+    left: 30%;
+}
+.testing-icon img:nth-child(3) {
+    position: absolute;
+    top: 13%;
+    left: 49%;
+}
+.testing-icon img:nth-child(4) {
+    position: absolute;
+    bottom: 59%;
+    right: 29%;
+}
+.testing-icon img:nth-child(5) {
+    position: absolute;
+    bottom: 20%;
+    right: 21%;
+}
+/*automation style-box end */
+
+
+.evolu-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.ios-box img {
+    margin: auto;
+}
+
+.react-box.ios-box .wapper-icon {
+    padding: 10px;
+    background: #fff;
+    border: solid 6px #f1f2f4;
+    border-radius: 50%;
+    width: 155px;
+    height: 155px;
+    display: flex;
+    margin: -100px auto 0;
+}
+.ios-cls .icon-cls img {
+    width: 35px;
+}
+.box-sec .wapper-icon {
+    padding: 10px;
+    border: solid 6px #F1F2F4;    
+    background: #fff;
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -100px auto 0;
+}
+
+.box-sec .wapper-icon img {
+    width: 70px;
+    height: 70px;
+    margin: auto; 
+}
+.uiux-icon img {
+    width: 60px;
+}
+.box-sec li {
+    width: 25%;
+}
+.python-evolution img {
+    filter: invert(1);
+}
+.icon-cls img {
+    width: 42px;
+    height: 42px;
+}
+.wordpress-evolution img {
+    filter: invert(1);
+}
+.row.tech-sec .net-inner {
+    width: 100%;
+    height: -webkit-fill-available;
+    padding:30px 20px 30px;
+}
+
+.row.tech-sec {
+    row-gap: 20px;
+}
+.laravel-listing.java-listing::after {
+    height: 96%;
+}
+.inner-icon-QA img {
+    width: 50px;
+    height: 50px;
+}
+.software-tech img {
+    width: 50px;
+    height: 50px;
 }

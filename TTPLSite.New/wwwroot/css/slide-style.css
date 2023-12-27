@@ -1,4 +1,12 @@
 
+
+.slick-list {
+	position: relative;
+	display: block;
+	margin: 0;
+	overflow: hidden;
+	padding: 0 0 !important;
+}
 .slick-prev:before, .slick-next:before {
   font-size: 70px;
   color: #EA8496;
@@ -29,13 +37,7 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-.slick-list {
-	position: relative;
-	display: block;
-	margin: 0;
-	overflow: hidden;
-	padding: 0 0 !important;
-}
+
 .slick-list:focus
 {
     outline: none;

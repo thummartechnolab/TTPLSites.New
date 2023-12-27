@@ -190,7 +190,7 @@ body {
 .section-2 {
     padding: 22px 0;
     background-color: #201f1f;
-    z-index: 999;
+    z-index: 9999;
     position: relative;
 }
 
@@ -6896,7 +6896,7 @@ ul.text-18.text-secondary.style-check li {
 .section-2 {
     padding: 22px 0;
     background-color: #201f1f;
-    z-index: 999;
+    z-index: 9999;
     position: relative;
 }
 
@@ -7748,7 +7748,8 @@ h2.all-homepage-heading {
         background-color: #F06115;
         padding: 15px 50px;
         color: #fff;
-		text-transform:uppercase;
+        text-transform: uppercase;
+        display: inline-block;
     }
 
     .btn-2 {
@@ -14533,11 +14534,11 @@ color: #000;
     border-radius: 10px;
 }
 .technology-drop .dropdown-menu {
-	min-width: 43rem;
+	min-width: 60rem;
 	left: -342px;
 }
 .technology-drop .dropdown-menu .menu-sub-box {
-	width: 25%;
+	width: 16.6%;
 	float: left;
 	padding: 0 15px 0 0;
 }

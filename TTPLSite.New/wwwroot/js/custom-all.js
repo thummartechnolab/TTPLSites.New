@@ -1,5 +1,4 @@
 
-
 jQuery(document).ready(function($) {
   $('.industry-slider').slick({
     dots: true,
