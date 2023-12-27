@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace TTPLSite.New.Pages.technologies
 {
-    public class mantra_e_commerce_detailModel : PageModel
+    public class ui_ux_technologiesModel : PageModel
     {
         public void OnGet()
         {

@@ -117,7 +117,7 @@
 @charset 'UTF-8';
 /* Slider */
 .slick-loading .slick-list {
-    background: #fff url('http://maggiesadler.com/wp-content/uploads/2015/10/ajax-loader.gif') center center no-repeat;
+    background: #fff url('../images/ajax-loader.gif') center center no-repeat;
 }
 
 /* Icons */
