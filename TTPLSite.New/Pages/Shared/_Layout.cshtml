@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/mobile.css" asp-append-version="true" />
 
+
+    <link rel="stylesheet" href="~/css/industry-style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/mobile-industry-style.css" asp-append-version="true" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
           integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,7 +27,7 @@
     <link rel="stylesheet" type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/images/favicon/favicon-16x16.png">
 </head>
 <body>
 
@@ -51,13 +55,12 @@
         </div>
     </div>
     <!-- Top Section End -->
-
     <!-- Nevbar Secion Start -->
     <div class="section-2" id="navbar">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="logo-image"> <a href="/index"><img src="images/logo.png" alt="" /></a> </div>
+                    <div class="logo-image"> <a href="/index"><img src="~/images/logo.png" alt="" /></a> </div>
                 </div>
                 <div class="col-md-7">
                     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -69,13 +72,9 @@
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page"
-                                           href="/index">Home</a>
-                                    </li>
+                                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/index">Home</a></li>
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                                           data-bs-toggle="dropdown" aria-expanded="false"> Company </a>
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Company </a>
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="/about-us">About us</a></li>
                                             <li>
@@ -94,8 +93,7 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                                           data-bs-toggle="dropdown" aria-expanded="false"> Service </a>
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Service </a>
                                         <ul class="dropdown-menu">
                                             <li>
                                                 <a class="dropdown-item"
@@ -169,7 +167,7 @@
                                 <li><a class="dropdown-item" href="/technologies/react-native-technologies">React Native</a></li>
                                 <li><a class="dropdown-item" href="/technologies/hire-flutter-developer-technologies">Flutter</a></li>
                             </div>
-                           
+
                             <div class="menu-sub-box">
                                 <h3>QA</h3>
                                 <li>
@@ -179,7 +177,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="/technologies/software-testing-qa-technologies">
+                                    <a class="dropdown-item" href="/technologies/software-testing-technologies">
                                         Software
                                         Testing
                                     </a>
@@ -331,7 +329,7 @@
     </div>
     <!-- /// footer-End /// -->
     <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/jquery-3.3.1.min.js" ></script>
+    <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/custom-all.js" asp-append-version="true"></script>
     <script src="/js/slick-slide.js" asp-append-version="true"></script>
     <script src="/js/slick.js" asp-append-version="true"></script>

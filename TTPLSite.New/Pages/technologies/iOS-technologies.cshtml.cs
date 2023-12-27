@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace TTPLSite.New.Pages.technologies
 {
-    public class iOSModel : PageModel
+    public class iosModel : PageModel
     {
         public void OnGet()
         {
