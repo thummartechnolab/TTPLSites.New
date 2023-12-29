@@ -5,55 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Thummar Technologies</title>
-    <link rel="stylesheet" href="~/css/bootstrap.min.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/slide-style.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/custom-style.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/mobile.css" asp-append-version="true" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
 
-
-    <link rel="stylesheet" href="~/css/industry-style.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/mobile-industry-style.css" asp-append-version="true" />
+    <link href="~/css/slide-style.css" rel="stylesheet" />
+    <link href="~/css/custom-style.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="~/css/industry-style.css" />
+    <link rel="stylesheet" href="~/css/mobile-industry-style.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
           integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script> -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick.css" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/mobile.css" rel="stylesheet" />
     <link rel="icon" type="image/png" sizes="16x16" href="~/images/favicon/favicon-16x16.png">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Slick CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+
 </head>
 <body>
 
     <!-- Top Section Start -->
-    <div class="section-1">
-        <div class="container">
-            <div class="flag-cont">
-                <div class="ind-img">
-                    <a href=""><img src="~/images/country/india.png" alt="" /></a> <a href="tel:+91-9725497682">+91-9725497682</a>
-                </div>
-                <div class="uk-img">
-                    <img src="~/images/country/uk.png" alt="" /> <a href="tel:+44 7427 194500">
-                        +44 7427
-                        194500
-                    </a>
-                </div>
-                <div class="email-box">
-                    <img src="~/images/email.png" alt="" /> <a href="mailto:inquiry@thummartechnologies.com">inquiry@thummartechnologies.com</a>
-                    <ul class="social-icons">
-                        <a href="https://calendly.com/thummartechnologies/bobby-ravji?month=2023-06&date=2023-06-28"
-                           target="_blank"><img src="~/images/calendar.png"></a>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    @*<div class="section-1">
+    <div class="container">
+    <div class="flag-cont">
+    <div class="ind-img">
+    <a href=""><img src="~/images/country/india.png" alt="" /></a> <a href="tel:+91-9725497682">+91-9725497682</a>
     </div>
+    <div class="uk-img">
+    <img src="~/images/country/uk.png" alt="" /> <a href="tel:+44 7427 194500">
+    +44 7427
+    194500
+    </a>
+    </div>
+    <div class="email-box">
+    <img src="~/images/email.png" alt="" /> <a href="mailto:inquiry@thummartechnologies.com">inquiry@thummartechnologies.com</a>
+    <ul class="social-icons">
+    <a href="https://calendly.com/thummartechnologies/bobby-ravji?month=2023-06&date=2023-06-28"
+    target="_blank"><img src="~/images/calendar.png"></a>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>*@
     <!-- Top Section End -->
     <!-- Nevbar Secion Start -->
     <div class="section-2" id="navbar">
@@ -77,161 +88,100 @@
                                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Company </a>
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="/about-us">About us</a></li>
-                                            <li>
-                                                <a class="dropdown-item" href="/our-leadership">Our Leadership</a>
+                                            <li><a class="dropdown-item" href="/our-leadership">Our Leadership</a></li>
+                                            <li><a class="dropdown-item" href="/why-choose-us">Why choose us</a></li>
+                                            <li><a class="dropdown-item" href="/work-methodology"> Work methodology </a>
                                             </li>
-                                            <li><a class="dropdown-item" href="/why-chose-us">Why choose us</a></li>
-                                            <li>
-                                                <a class="dropdown-item" href="/work-methodology">
-                                                    Work
-                                                    methodology
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="/our-philosophy">Our Philosophy</a>
-                                            </li>
+                                            <li><a class="dropdown-item" href="/our-philosophy">Our Philosophy</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Service </a>
                                         <ul class="dropdown-menu">
-                                            <li>
-                                                <a class="dropdown-item"
-                                                   href="/services/web-application-development-services">
-                                                    Web
-                                                    Application
-                                                    Development
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item"
-                                                   href="/services/mobile-app-development-services">
-                                                    Mobile
-                                                    Application Development
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="/services/custom-development-services">
-                                                    Custom
-                                                    Development
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item"
-                                                   href="/services/e-commerce-application-development-services">
-                                                    E-Commerce
-                                                    Application Development
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="/services/ui-ux-development-services">
-                                                    UI/UX
-                                                    Development
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="/services/software-testing-services">
-                                                    Software
-                                                    Testing &
-                                                    QA
-                                                </a>
-                                            </li>
+                                            <li><a class="dropdown-item" href="/services/web-application-development-services"> Web Application Development</a></li>
+                                            <li><a class="dropdown-item" href="/services/mobile-app-development-services"> Mobile Application Development</a> </li>
+                                            <li><a class="dropdown-item" href="/services/custom-development-services">Custom Development</a></li>
+                                            <li><a class="dropdown-item"href="/services/e-commerce-application-development-services">E-Commerce Application Development</a></li>
+                                            <li><a class="dropdown-item" href="/services/ui-ux-development-services">UI/UX Development </a></li>
+                                            <li> <a class="dropdown-item" href="/services/software-testing-services"> Software Testing & QA </a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item dropdown technology-drop">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                                           data-bs-toggle="dropdown" aria-expanded="false">Technologie</a>
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Technologie</a>
                                         <ul class="dropdown-menu">
                                             <div class="menu-sub-box">
-                                                <h3>Front End</h3>
-                                            <li><a class="dropdown-item" href="/technologies/angular-technologies">Angular</a></li>
-                                            <li><a class="dropdown-item" href="/technologies/reactjs-technologies">Reactjs</a></li>
-                                            <li><a class="dropdown-item" href="/technologies/vuejs-technologies">Vue.js</a></li>
-                                            <li><a class="dropdown-item" href="/technologies/ui-ux-technologies">UI/UX</a></li>
-                            </div>
-                            <div class="menu-sub-box">
-                                <h3>Back End</h3>
-                                <li><a class="dropdown-item" href="/technologies/ruby-on-rails-technologies">Ruby on Rails</a></li>
-                                <li><a class="dropdown-item" href="/technologies/nodejs-technologies">Node.js</a></li>
-                                <li><a class="dropdown-item" href="/technologies/laravel-technologies">Laravel</a></li>
-                                <li><a class="dropdown-item" href="/technologies/net-technologies">.NET</a></li>
-                                <li><a class="dropdown-item" href="/technologies/java-technologies">Java</a></li>
-                                <li><a class="dropdown-item" href="/technologies/python-technologies">Python</a></li>
-                                <li><a class="dropdown-item" href="/technologies/php-technologies">PHP</a></li>
-                                <li><a class="dropdown-item" href="/technologies/WordPress-technologies">WordPress</a></li>
-                            </div>
-                            <div class="menu-sub-box">
-                                <h3>Mobile</h3>
-                                <li><a class="dropdown-item" href="/technologies/android-technologies">Android</a></li>
-                                <li><a class="dropdown-item" href="/technologies/ios-technologies">IOS</a></li>
-                                <li><a class="dropdown-item" href="/technologies/react-native-technologies">React Native</a></li>
-                                <li><a class="dropdown-item" href="/technologies/hire-flutter-developer-technologies">Flutter</a></li>
-                            </div>
-
-                            <div class="menu-sub-box">
-                                <h3>QA</h3>
-                                <li>
-                                    <a class="dropdown-item" href="/technologies/automation-testing-technologies">
-                                        Automation
-                                        Testing
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="/technologies/software-testing-technologies">
-                                        Software
-                                        Testing
-                                    </a>
-                                </li>
-                            </div>
-                            <div class="menu-sub-box">
-                                <h3>Cloud</h3>
-                                <li><a class="dropdown-item" href="/technologies/azure-technologies">Azure</a></li>
-                                <li><a class="dropdown-item" href="/technologies/aws-technologies">AWS</a></li>
-                                <li><a class="dropdown-item" href="/technologies/devops-technologies">DevOps</a></li>
-                            </div>
-
-                            </ul>
-                            </li>
-
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                   data-bs-toggle="dropdown" aria-expanded="false"> Industry </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/industry/healthcare">HealthCare</a></li>
-                                    <li><a class="dropdown-item" href="/industry/education">Education</a></li>
-                                    <li><a class="dropdown-item" href="/industry/finttech">FintTech</a></li>
-                                    <li><a class="dropdown-item" href="/industry/ecommerce">eCommerce</a></li>
-                                    <li><a class="dropdown-item" href="/industry/logistics">Logistics</a></li>
-                                    <li><a class="dropdown-item" href="/industry/real-estate">	Real Estate </a></li>
-                                    <li><a class="dropdown-item" href="/industry/lifestyle">LifeStyle</a></li>
-                                    <li><a class="dropdown-item" href="/industry/hospitality">Hospitality & Travel </a></li>
-                                    <li><a class="dropdown-item" href="/industry/media">Media & Media & Entertainments</a></li>
-                                    <li><a class="dropdown-item" href="/industry/legal">Legal</a></li>
+                                            <h3>Front End</h3>
+                                                <li><a class="dropdown-item" href="/technologies/angular-technologies">Angular</a></li>
+                                                <li><a class="dropdown-item" href="/technologies/reactjs-technologies">Reactjs</a></li>
+                                                <li><a class="dropdown-item" href="/technologies/vuejs-technologies">Vue.js</a></li>
+                                                <li><a class="dropdown-item" href="/technologies/ui-ux-technologies">UI/UX</a></li>
+                                            </div>
+                                            <div class="menu-sub-box">
+                                                <h3>Back End</h3>
+                                                <li><a class="dropdown-item" href="/technologies/ruby-on-rails-technologies">Ruby on Rails</a></li>
+                                                <li><a class="dropdown-item" href="/technologies/nodejs-technologies">Node.js</a></li>
+                                                <li><a class="dropdown-item" href="/technologies/laravel-technologies">Laravel</a></li>
+                                                <li><a class="dropdown-item" href="/technologies/net-technologies">.NET</a></li>
+                                                <li><a class="dropdown-item" href="/technologies/java-technologies">Java</a></li>
+                                                <li><a class="dropdown-item" href="/technologies/python-technologies">Python</a></li>
+                                                <li><a class="dropdown-item" href="/technologies/php-technologies">PHP</a></li>
+                                                <li><a class="dropdown-item" href="/technologies/WordPress-technologies">WordPress</a></li>
+                                            </div>
+                                            <div class="menu-sub-box">
+                                                <h3>Mobile</h3>
+                                                <li><a class="dropdown-item" href="/technologies/android-technologies">Android</a></li>
+                                                <li><a class="dropdown-item" href="/technologies/ios-technologies">IOS</a></li>
+                                                <li><a class="dropdown-item" href="/technologies/react-native-technologies">React Native</a></li>
+                                                <li><a class="dropdown-item" href="/technologies/hire-flutter-developer-technologies">Flutter</a></li>
+                                            </div>
+                                            <div class="menu-sub-box">
+                                                <h3>QA</h3>
+                                                <li><a class="dropdown-item" href="/technologies/automation-testing-technologies"> Automation Testing </a></li>
+                                                <li><a class="dropdown-item" href="/technologies/software-testing-technologies"> Software Testing </a></li>
+                                             </div>
+                                            <div class="menu-sub-box">
+                                                <h3>Cloud</h3>
+                                                <li><a class="dropdown-item" href="/technologies/azure-technologies">Azure</a></li>
+                                                <li><a class="dropdown-item" href="/technologies/aws-technologies">AWS</a></li>
+                                                <li><a class="dropdown-item" href="/technologies/devops-technologies">DevOps</a></li>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Industry </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/industry/healthcare">HealthCare</a></li>
+                                            <li><a class="dropdown-item" href="/industry/education">Education</a></li>
+                                            <li><a class="dropdown-item" href="/industry/finttech">FintTech</a></li>
+                                            <li><a class="dropdown-item" href="/industry/ecommerce">eCommerce</a></li>
+                                            <li><a class="dropdown-item" href="/industry/logistics">Logistics</a></li>
+                                            <li><a class="dropdown-item" href="/industry/real-estate">	Real Estate </a></li>
+                                            <li><a class="dropdown-item" href="/industry/lifestyle">LifeStyle</a></li>
+                                            <li><a class="dropdown-item" href="/industry/hospitality">Hospitality & Travel </a></li>
+                                            <li><a class="dropdown-item" href="/industry/media">Media & Media & Entertainments</a></li>
+                                            <li><a class="dropdown-item" href="/industry/legal">Legal</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"> <a class="nav-link" href="/portfolio"> Portfolio</a> </li>
+                                    <!--<li class="nav-item"> <a class="nav-link" href="/career"> Career</a> </li>-->
+                                    <!--<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Case Study </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">One List page</a></li>
+                                            <li><a class="dropdown-item" href="#">One Detail page</a></li>
+                                        </ul>
+                                    </li-->
+                                    <!--<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="/blog" role="button"> Blog </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">One List page</a></li>
+                                            <li><a class="dropdown-item" href="#">One Detail page</a></li>
+                                        </ul>
+                                    </li-->
+                                    <li class="nav-item"> <a class="nav-link" href="/contact-us"> Contact us</a> </li>
                                 </ul>
-                            </li>
-
-                            <li class="nav-item"> <a class="nav-link" href="/portfolio"> Portfolio</a> </li>
-                            <!--<li class="nav-item"> <a class="nav-link" href="/career"> Career</a> </li>-->
-                            <!--li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                          aria-expanded="false"> Case Study </a>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">One List page</a></li>
-                                <li><a class="dropdown-item" href="#">One Detail page</a></li>
-                              </ul>
-                            </li-->
-                            <!--li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="/blog" role="button"> Blog </a>
-                              <<ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">One List page</a></li>
-                                <li><a class="dropdown-item" href="#">One Detail page</a></li>
-                              </ul>
-                            </li-->
-                            <li class="nav-item"> <a class="nav-link" href="/contact-us"> Contact us</a> </li>
-                            </ul>
+                            </div>
                         </div>
+                    </nav>
                 </div>
-                </nav>
-            </div>
             <div class="col-md-2">
                 <div class="btn-1"> <a href="/contact-us">Book a Call</a> </div>
             </div>
@@ -310,11 +260,28 @@
                             <li>
                                 <span class="add"><img src="~/images/icon3.png" /></span> <a href="mailto:inquiry@thummartechnologies.com">inquiry@thummartechnologies.com</a>
                             </li>
-                            <!--<li> <span class="add"><img src="~/images/icon3.png" /></span> <a href="">111, 1st Floor, President House, Opp. C N Vidyalay, Ambawadi Cricle, Ellisbridge,
-                              Ahmedabad – 380006</a> </li>-->
+                            @*<li>
+                                <span class="add"><img src="~/images/icon2.png" /></span> <a href="">
+                                    111, 1st Floor, President House, Opp. C N Vidyalay, Ambawadi Cricle, Ellisbridge,
+                                    Ahmedabad – 380006
+                                </a>
+                            </li>*@
                         </ul>
                     </div>
                 </div>
+                @*<div class="col-md-3 footer-icon">
+                    <div class="social-icon">
+                        <div class="foot-head">
+                            <h1>Stay Connected</h1>
+                        </div>
+                        <ul>
+                            <li><a href="https://www.facebook.com/thummartech"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/thummartechnologies"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="https://twitter.com/thummartech"><div class="foter-icon"><img src="images/twiter-icon.png"></div></a></li>
+                            <li><a href="https://www.instagram.com/thummartechnologies"><i class="fa-brands fa-instagram"></i> </a></li>
+                        </ul>
+                    </div>
+                </div>*@
 
             </div>
             <div class="ttpl">
@@ -328,19 +295,22 @@
         </div>
     </div>
     <!-- /// footer-End /// -->
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/jquery-3.3.1.min.js"></script>
-    <script src="/js/custom-all.js" asp-append-version="true"></script>
-    <script src="/js/slick-slide.js" asp-append-version="true"></script>
-    <script src="/js/slick.js" asp-append-version="true"></script>
-    <script src="/js/style.js" asp-append-version="true"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/custom-all.js"></script>
+    <script src="~/js/slick-slide.js"></script>
+    <script src="~/js/slick.js"></script>
+    <script src="~/js/style.js"></script>
+
     <!-- Include Owl Carousel JS file -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <!-- 3D slider script -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.8/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+
+    <!-- 3D slider script
     <script>
         const leftButton = document.querySelector('.arrow.left');
         const rightButton = document.querySelector('.arrow.right');
@@ -380,7 +350,7 @@
                 slide.classList.add(`slide-${slideToBe}`);
             });
         }
-    </script>
+    </script> -->
     <!-- // Sticky nevbar start-->
     <script>
         // When the user scrolls the page, execute myFunction
@@ -454,7 +424,7 @@
         });
     </script>
     <!-- Include jQuery library -->
-    <script>
+    <!-- <script>
         var multipleCardCarousel = document.querySelector("#carouselExampleControls");
         if (window.matchMedia("(min-width: 576px)").matches) {
             var carousel = new bootstrap.Carousel(multipleCardCarousel, {
@@ -478,7 +448,7 @@
         } else {
             $(multipleCardCarousel).addClass("slide");
         }
-    </script>
+    </script> -->
 
     <script>
         $(document).ready(function () {

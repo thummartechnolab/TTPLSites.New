@@ -1,7 +1,22 @@
 ﻿@page
 @model TTPLSite.New.Pages.contact_usModel
-@{
-}
+
+@using AspNetCore.ReCaptcha
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.Extensions.Options
+@using TTPLSite.New.Models;
+@inject IOptions<ReCaptcha> reCaptcha
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=@reCaptcha.Value.SiteKey&trustedtypes=true"></script>
+<script>
+    grecaptcha.ready(function () {
+        grecaptcha.execute('@reCaptcha.Value.SiteKey', { action: 'contact' }).then(function (token) {
+            // Add your logic to submit to your backend server here.
+            $("#input-token").val(token);
+        });
+    });
+</script>
 
 <div class="services-saction-banner contact">
     <div class="container">
@@ -25,13 +40,17 @@
             <div class="col-lg-8 col-md-8 col-sm-8">
                 <div class="form animated flipInX">
                     <h2 class="text-text">Get In Touch With Us</h2>
-                    <form method="post">
-                        <input placeholder="Name" type="text" id="name" required />
-                        <input placeholder="Email" type="email" id="email" required />
-                        <input placeholder="Phone" type="text" id="phone" required />
-                        <textarea placeholder="Message" name="Message" rows="6" cols="70" id="message" required></textarea>
-                        <button type="button" id="sendEmailButton">Send Message</button>
+                    <form class="contact-form--main" id="contact-form" method="post">
+                        @Html.AntiForgeryToken()
+                        <input placeholder="Name" type="text" id="name" required asp-for="Inquiry.UserName" />
+                        <input placeholder="Email" type="email" id="email" required asp-for="Inquiry.Email" />
+                        <input placeholder="Phone" type="text" id="phone" required asp-for="Inquiry.Phone" />
+                        @Html.TextAreaFor(Model => Model.Inquiry.Message, new { rows="6", cols="70", placeholder="Message", required= "required" })
+                        @*<textarea placeholder="Message" name="Message" rows="6" cols="70" id="message" required asp-for="Inquiry.Message"></textarea>*@
+                        <input id="input-token" hidden="hidden" asp-for="Inquiry.Captcha" />
+                        <button type="submit" id="sendEmailButton">Send Message</button>
                     </form>
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4">
