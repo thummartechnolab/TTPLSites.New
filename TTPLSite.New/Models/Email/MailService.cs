@@ -69,7 +69,7 @@ namespace TTPLSite.New.Models.Email
                 email.Bcc.Add(MailboxAddress.Parse(x));
             });
 
-            email.Subject = $"New Inquiery - {request.UserName}";
+            email.Subject = $"New Inquiry - {request.UserName}";
             var builder = new BodyBuilder();
             builder.HtmlBody = MailText;
             email.Body = builder.ToMessageBody();
