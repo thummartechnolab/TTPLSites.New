@@ -22,8 +22,83 @@
     .grecaptcha-badge {
         bottom: 90px !important;
     }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        background: rgba(255,255,255,0.8) url("../images/ajax-loader.gif") center no-repeat;
+    }
+    body.loading {
+        overflow: hidden;
+    }
+    /* Make spinner image visible when body element has the loading class */
+    body.loading .overlay {
+        display: block;
+    }
 </style>
 
+
+<script type="text/javascript">
+    // Add remove loading class on body element depending on Ajax request status
+    $(document).on({
+        ajaxStart: function () {
+            $("body").addClass("loading");
+        },
+        ajaxStop: function () {
+            $("body").removeClass("loading");
+        }
+    });
+
+    function postdata() {
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var phone = $('#phone').val();
+        var message = $('#message').val();
+        var captcha = $('#input-token').val();
+
+        var data = JSON.stringify({
+            userName: name,
+            email: email,
+            phone: phone,
+            message: message,
+            captcha: captcha
+        });
+        console.log(data);
+        $.ajax({
+            type: "POST",
+            url: "/contact-us?handler=SendContact",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            data: data,
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader("XSRF-TOKEN",
+                    $('input:hidden[name="__RequestVerificationToken"]').val());
+            },
+            success: function (response) {
+                console.log(response);
+                $("#formDiv").hide();
+                document.getElementById("contactMessage").innerText = "Thank you for your message. I'll get back to you within 24 hours.!";
+            },
+            failure: function (response) {
+                console.log(response);
+                document.getElementById("contactMessage").innerText = "Something went wrong!";
+                $("#formDiv").hide();
+            },
+            error: function (response) {
+                console.log(response);
+                document.getElementById("contactMessage").innerText = "Something went wrong!";
+                $("#formDiv").hide();
+            }
+        });
+    }
+
+</script>
+@Html.AntiForgeryToken()
 <div class="services-saction-banner contact">
     <div class="container">
         <div class="row">
@@ -44,20 +119,20 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-8">
-                <div class="form animated flipInX">
+                <div class="form animated flipInX" id="formDiv">
                     <h2 class="text-text">Get In Touch With Us</h2>
-                    <form class="contact-form--main" id="contact-form" method="post">
-                        @Html.AntiForgeryToken()
-                        <input placeholder="Name" type="text" id="name" required asp-for="Inquiry.UserName" />
-                        <input placeholder="Email" type="email" id="email" required asp-for="Inquiry.Email" />
-                        <input placeholder="Phone" type="text" id="phone" required asp-for="Inquiry.Phone" />
-                        @Html.TextAreaFor(Model => Model.Inquiry.Message, new { rows="6", cols="70", placeholder="Message", required= "required" })
-                        @*<textarea placeholder="Message" name="Message" rows="6" cols="70" id="message" required asp-for="Inquiry.Message"></textarea>*@
-                        <input id="input-token" hidden="hidden" asp-for="Inquiry.Captcha" />
-                        <button type="submit" id="sendEmailButton">Send Message</button>
-                    </form>
+
+                    @Html.TextBoxFor(Model => Model.Inquiry.UserName, new {id = "name", placeholder="Name", required= "required" })
+                    @Html.TextBoxFor(Model => Model.Inquiry.Email, new { id = "email", placeholder="Email", required= "required" })
+                    @Html.TextBoxFor(Model => Model.Inquiry.Phone, new { id = "phone", placeholder="Phone", required= "required" })
+                    @Html.TextAreaFor(Model => Model.Inquiry.Message, new { id = "message", rows="6", cols="70", placeholder="Message", required= "required" })
+                    <input id="input-token" hidden="hidden" asp-for="Inquiry.Captcha" />
+
+                    <button type="submit" id="sendEmailButton" onclick="postdata(this)">Send Message</button>
+                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8KW5cuB058RCnNyZSLI7AUjUAtTwe54jQ4Z9Goyn3WKPcpVFYSFUM5J-JDFC3E-MZIUcyR0UnbrvrC_sHv6MbUONStuIMhqDc7i00pQiGkrzf3hK6t5gZFVrjUpyAcargow4zvKU_ISjdPfoLTNF588" />
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 </div>
+                <div id="contactMessage" style="font-size: xx-large; color: #f06115"></div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="sec-2a p-5">
@@ -256,3 +331,5 @@
         </div>
     </div>
 </div>
+
+<div class="overlay"></div>

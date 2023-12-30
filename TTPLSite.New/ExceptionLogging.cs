@@ -10,6 +10,7 @@ namespace TTPLSite.New
     public interface IExceptionLogging
     {
         void WriteError(Exception ex);
+        void WriteInfo(string message);
     }
     public class ExceptionLogging : IExceptionLogging
     {
@@ -20,8 +21,6 @@ namespace TTPLSite.New
         }
         public void WriteError(Exception ex)
         {
-            //string webRootPath = _hostingEnvironment.WebRootPath;
-            //string contentRootPath = _hostingEnvironment.ContentRootPath;
             try
             {
                 string filepath = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location) + "\\error";  //Text File Path
@@ -66,5 +65,37 @@ namespace TTPLSite.New
             }
         }
 
+        public void WriteInfo(string message)
+        {
+            try
+            {
+                string filepath = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location) + "\\info";  //Text File Path
+
+                if (!Directory.Exists(filepath))
+                {
+                    Directory.CreateDirectory(filepath);
+                }
+                filepath = Path.Combine(filepath, DateTime.Today.ToString("dd-MM-yyyy") + ".txt");   //Text File Name
+                if (!File.Exists(filepath))
+                {
+                    File.Create(filepath).Dispose();
+                }
+                using (StreamWriter sw = File.AppendText(filepath))
+                {
+                    StringBuilder stringBuilder = new StringBuilder();
+                    stringBuilder.AppendLine("-----------Information Details on " + " " + DateTime.Now.ToString() + "-----------------");
+                    stringBuilder.AppendLine($"Message: {message}");
+                    stringBuilder.AppendLine("-------------------------------------------------------------------------------------");
+
+                    sw.Write(stringBuilder.ToString());
+                    sw.Flush();
+                    sw.Close();
+                }
+            }
+            catch (Exception e)
+            {
+                WriteError(e);
+            }
+        }
     }
 }

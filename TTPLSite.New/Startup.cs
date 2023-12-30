@@ -21,6 +21,9 @@ namespace TTPLSite.New
             //services.AddControllersWithViews().AddRazorRuntimeCompilation();
             //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
+            services.AddMvc();//.SetCompatibilityVersion(CompatibilityVersion.Latest);
+            services.AddAntiforgery(o => o.HeaderName = "XSRF-TOKEN");
+
             services.Configure<MailSettings>(Configuration.GetSection("MailSettings"));
 
             services.Configure<ReCaptcha>(Configuration.GetSection("ReCaptcha"));
@@ -53,8 +56,6 @@ namespace TTPLSite.New
             else
             {
                 app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
             }
 
             app.UseDefaultFiles();//allow static html file
