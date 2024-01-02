@@ -407,7 +407,7 @@ span.add {
 
 
 .about-section {
-    background: url(../images/banner-about.jpg);
+    background: url(../images/banner-about.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 178px;
@@ -690,7 +690,7 @@ span i {
 
 
 .about-section {
-    background: url(../images/banner-about.jpg);
+    background: url(../images/banner-about.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 178px;
@@ -825,7 +825,7 @@ h2.all-homepage-heading {
     padding: 100px 0 150px;
     display: inline-block;
     width: 100%;
-    background: url(../images/banner-industry1.jpg);
+    background: url(../images/banner-industry1.webp);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -997,14 +997,14 @@ h2.all-homepage-heading {
     position: relative;
 }
     .Industries.We.Serve {
-    padding: 100px 0 150px;
-    display: inline-block;
-    width: 100%;
-    background: url(../images/banner-industry1.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
+        padding: 100px 0 150px;
+        display: inline-block;
+        width: 100%;
+        background: url(../images/banner-industry1.webp);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
     /* Testimaonial slider end  */
     p.case-para {
         text-align: center;
@@ -7129,7 +7129,7 @@ span.add {
 
 
 .about-section {
-    background: url(../images/banner-about.jpg);
+    background: url(../images/banner-about.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 178px;
@@ -7412,7 +7412,7 @@ span i {
 
 
 .about-section {
-    background: url(../images/banner-about.jpg);
+    background: url(../images/banner-about.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 178px;

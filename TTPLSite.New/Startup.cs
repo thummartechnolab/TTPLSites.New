@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using TTPLSite.New.Models.Email;
 using TTPLSite.New.Models;
+using Microsoft.AspNetCore.ResponseCompression;
+using System.IO.Compression;
 
 namespace TTPLSite.New
 {
@@ -44,6 +46,35 @@ namespace TTPLSite.New
                 //    builder.WithOrigins("http://www.test.com").AllowAnyHeader().AllowAnyMethod();
                 //});
             });
+
+            //Compression
+            services.AddResponseCompression(options =>
+            {
+                options.EnableForHttps = true;
+                options.Providers.Add<BrotliCompressionProvider>();
+                options.Providers.Add<GzipCompressionProvider>();
+            });
+
+            services.Configure<BrotliCompressionProviderOptions>(options =>
+            {
+                options.Level = CompressionLevel.Fastest;
+            });
+
+            services.Configure<GzipCompressionProviderOptions>(options =>
+            {
+                options.Level = CompressionLevel.SmallestSize;
+            });
+
+            //Cache
+            services.AddResponseCaching();
+            services.AddControllers(options =>
+            {
+                options.CacheProfiles.Add("Default30",
+                    new CacheProfile()
+                    {
+                        Duration = 31536000
+                    });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -63,7 +94,13 @@ namespace TTPLSite.New
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            // UseCors must be called before UseResponseCaching
             app.UseCors();
+
+
+            app.UseResponseCaching();
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

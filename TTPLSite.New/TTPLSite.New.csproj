@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="bundleconfig.json" />
     <None Include="wwwroot\font\Gilroy-Black.woff2" />
     <None Include="wwwroot\font\Gilroy-Bold.woff2" />
     <None Include="wwwroot\font\Gilroy-ExtraBold.woff2" />
