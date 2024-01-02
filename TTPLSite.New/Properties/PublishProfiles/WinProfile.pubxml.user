@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>E:\TTPL\Git\TTPL\TTPLSites.New\TTPLSite.New\bin\Release\net7.0\publish\</_PublishTargetUrl>
+    <History>True|2023-12-31T09:08:04.2265240Z;True|2023-12-30T11:53:39.6650424+05:30;True|2023-12-29T18:44:14.9166315+05:30;True|2023-12-29T17:24:34.2381470+05:30;True|2023-12-29T17:14:02.5811707+05:30;True|2023-12-29T17:08:11.1756901+05:30;True|2023-12-29T16:35:43.3685337+05:30;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="wwwroot/css/style.css">
+      <publishTime>12/29/2023 11:10:34</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

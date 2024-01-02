@@ -7,8 +7,8 @@
 @using TTPLSite.New.Models;
 @inject IOptions<ReCaptcha> reCaptcha
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://www.google.com/recaptcha/api.js?render=@reCaptcha.Value.SiteKey&trustedtypes=true"></script>
+@*<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+*@<script src="https://www.google.com/recaptcha/api.js?render=@reCaptcha.Value.SiteKey&trustedtypes=true"></script>
 <script>
     grecaptcha.ready(function () {
         grecaptcha.execute('@reCaptcha.Value.SiteKey', { action: 'contact' }).then(function (token) {
@@ -17,7 +17,88 @@
         });
     });
 </script>
+<style>
+    /* Move reCAPTCHA v3 badge up */
+    .grecaptcha-badge {
+        bottom: 90px !important;
+    }
 
+    .overlay {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        background: rgba(255,255,255,0.8) url("../images/ajax-loader.gif") center no-repeat;
+    }
+    body.loading {
+        overflow: hidden;
+    }
+    /* Make spinner image visible when body element has the loading class */
+    body.loading .overlay {
+        display: block;
+    }
+</style>
+
+
+<script type="text/javascript">
+    // Add remove loading class on body element depending on Ajax request status
+    $(document).on({
+        ajaxStart: function () {
+            $("body").addClass("loading");
+        },
+        ajaxStop: function () {
+            $("body").removeClass("loading");
+        }
+    });
+
+    function postdata() {
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var phone = $('#phone').val();
+        var message = $('#message').val();
+        var captcha = $('#input-token').val();
+
+        var data = JSON.stringify({
+            userName: name,
+            email: email,
+            phone: phone,
+            message: message,
+            captcha: captcha
+        });
+        console.log(data);
+        $.ajax({
+            type: "POST",
+            url: "/contact-us?handler=SendContact",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            data: data,
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader("XSRF-TOKEN",
+                    $('input:hidden[name="__RequestVerificationToken"]').val());
+            },
+            success: function (response) {
+                console.log(response);
+                $("#formDiv").hide();
+                document.getElementById("contactMessage").innerText = "Thank you for your message. I'll get back to you within 24 hours.!";
+            },
+            failure: function (response) {
+                console.log(response);
+                document.getElementById("contactMessage").innerText = "Something went wrong!";
+                $("#formDiv").hide();
+            },
+            error: function (response) {
+                console.log(response);
+                document.getElementById("contactMessage").innerText = "Something went wrong!";
+                $("#formDiv").hide();
+            }
+        });
+    }
+
+</script>
+@Html.AntiForgeryToken()
 <div class="services-saction-banner contact">
     <div class="container">
         <div class="row">
@@ -38,24 +119,24 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-8">
-                <div class="form animated flipInX">
+                <div class="form animated flipInX" id="formDiv">
                     <h2 class="text-text">Get In Touch With Us</h2>
-                    <form class="contact-form--main" id="contact-form" method="post">
-                        @Html.AntiForgeryToken()
-                        <input placeholder="Name" type="text" id="name" required asp-for="Inquiry.UserName" />
-                        <input placeholder="Email" type="email" id="email" required asp-for="Inquiry.Email" />
-                        <input placeholder="Phone" type="text" id="phone" required asp-for="Inquiry.Phone" />
-                        @Html.TextAreaFor(Model => Model.Inquiry.Message, new { rows="6", cols="70", placeholder="Message", required= "required" })
-                        @*<textarea placeholder="Message" name="Message" rows="6" cols="70" id="message" required asp-for="Inquiry.Message"></textarea>*@
-                        <input id="input-token" hidden="hidden" asp-for="Inquiry.Captcha" />
-                        <button type="submit" id="sendEmailButton">Send Message</button>
-                    </form>
+
+                    @Html.TextBoxFor(Model => Model.Inquiry.UserName, new {id = "name", placeholder="Name", required= "required" })
+                    @Html.TextBoxFor(Model => Model.Inquiry.Email, new { id = "email", placeholder="Email", required= "required" })
+                    @Html.TextBoxFor(Model => Model.Inquiry.Phone, new { id = "phone", placeholder="Phone", required= "required" })
+                    @Html.TextAreaFor(Model => Model.Inquiry.Message, new { id = "message", rows="6", cols="70", placeholder="Message", required= "required" })
+                    <input id="input-token" hidden="hidden" asp-for="Inquiry.Captcha" />
+
+                    <button type="submit" id="sendEmailButton" onclick="postdata(this)">Send Message</button>
+                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8KW5cuB058RCnNyZSLI7AUjUAtTwe54jQ4Z9Goyn3WKPcpVFYSFUM5J-JDFC3E-MZIUcyR0UnbrvrC_sHv6MbUONStuIMhqDc7i00pQiGkrzf3hK6t5gZFVrjUpyAcargow4zvKU_ISjdPfoLTNF588" />
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 </div>
+                <div id="contactMessage" style="font-size: xx-large; color: #f06115"></div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="sec-2a p-5">
-                    <div class="sec-2a-img text-center"> <img src="~/images/country/india.jpg" alt="flag-image"> </div>
+                    <div class="sec-2a-img text-center"> <img src="~/images/country/india.jpg" loading="lazy" alt="flag-image"> </div>
                     <h1 class="mt-5 mb-4 text-center">Ahmedabad, India</h1>
                     <!--<p><i class="fa-solid fa-location-dot"></i> 111, President House, Opp. CN Vidalaya,
                       Ambawadi circle, Ellisbridge, Ahemdabad</p>-->
@@ -67,7 +148,7 @@
                     </p>
                 </div>
                 <div class="sec-2a p-5">
-                    <div class="sec-2a-img text-center"> <img src="~/images/country/london.webp" alt="flag-image"> </div>
+                    <div class="sec-2a-img text-center"> <img src="~/images/country/london.webp" loading="lazy" alt="flag-image"> </div>
                     <h1 class="mt-5 mb-4 text-center">London, UK</h1>
                     <!--<p><i class="fa-solid fa-location-dot"></i> Coming Soon</p>-->
                     <!-- <p><i class="fa-solid fa-phone"></i> <a href="+44 7427194500"> +44 7427194500</a></p> -->
@@ -88,7 +169,7 @@
             <div class="col-md-2">
                 <div class="inner-coutry">
                     <div class="inner-flag">
-                        <img src="~/images/country/india_1.png">
+                        <img src="~/images/country/india_1.png" loading="lazy">
                         <p>India (HQ)</p>
                     </div>
                     <!-- <h3>Corporate House</h3> -->
@@ -98,7 +179,7 @@
             <div class="col-md-2">
                 <div class="inner-coutry">
                     <div class="inner-flag">
-                        <img src="~/images/country/uk_1.png">
+                        <img src="~/images/country/uk_1.png" loading="lazy">
                         <p>UK</p>
                     </div>
                     <!-- <p class="address-text">601 Brickell Key Drive, Suite 700, Miami, Florida, 33131, USA</p> -->
@@ -107,7 +188,7 @@
             <div class="col-md-2">
                 <div class="inner-coutry">
                     <div class="inner-flag">
-                        <img src="~/images/country/germany_1.png">
+                        <img src="~/images/country/germany_1.png" loading="lazy">
                         <p>Germany</p>
                     </div>
                     <!-- <p class="address-text">71 Dawes Road, Brampton, On L6X 5N9, Toronto</p> -->
@@ -116,7 +197,7 @@
             <div class="col-md-2">
                 <div class="inner-coutry">
                     <div class="inner-flag">
-                        <img src="~/images/country/italy_1.png">
+                        <img src="~/images/country/italy_1.png" loading="lazy">
                         <p>Italy</p>
                     </div>
                     <!-- <p class="address-text">351A Hampstead Rd, Northfield SA 5085</p> -->
@@ -125,7 +206,7 @@
             <div class="col-md-2">
                 <div class="inner-coutry">
                     <div class="inner-flag">
-                        <img src="~/images/country/france_1.png">
+                        <img src="~/images/country/france_1.png" loading="lazy">
                         <p>France</p>
                     </div>
                     <!-- <p class="address-text">1608 Clover Bay, Business Bay, Dubai, UAE. PO Box 62049</p> -->
@@ -134,7 +215,7 @@
             <div class="col-md-2">
                 <div class="inner-coutry">
                     <div class="inner-flag">
-                        <img src="~/images/country/spain_1.png">
+                        <img src="~/images/country/spain_1.png" loading="lazy">
                         <p>Spain</p>
                     </div>
                     <!-- <p class="address-text">Junkergatan 4, 126 53 Hagersten</p> -->
@@ -150,7 +231,7 @@
             <div class="col-md-2">
                 <div class="inner-coutry">
                     <div class="inner-flag">
-                        <img src="~/images/country/poland_1.png">
+                        <img src="~/images/country/poland_1.png" loading="lazy">
                         <p>Poland</p>
                     </div>
                     <!-- <h3>Corporate House</h3>
@@ -160,7 +241,7 @@
             <div class="col-md-2">
                 <div class="inner-coutry">
                     <div class="inner-flag">
-                        <img src="~/images/country/ukraine_1.png">
+                        <img src="~/images/country/ukraine_1.png" loading="lazy">
                         <p>Ukraine</p>
                     </div>
                     <!-- <p class="address-text">601 Brickell Key Drive, Suite 700, Miami, Florida, 33131, USA</p> -->
@@ -169,7 +250,7 @@
             <div class="col-md-2">
                 <div class="inner-coutry">
                     <div class="inner-flag">
-                        <img src="~/images/country/netherlands_1.png">
+                        <img src="~/images/country/netherlands_1.png" loading="lazy">
                         <p>Netherlands</p>
                     </div>
                     <!-- <p class="address-text">71 Dawes Road, Brampton, On L6X 5N9, Toronto</p> -->
@@ -178,7 +259,7 @@
             <div class="col-md-2">
                 <div class="inner-coutry">
                     <div class="inner-flag">
-                        <img src="~/images/country/belgium_1.png">
+                        <img src="~/images/country/belgium_1.png" loading="lazy">
                         <p>Belgium</p>
                     </div>
                     <!-- <p class="address-text">351A Hampstead Rd, Northfield SA 5085</p> -->
@@ -187,7 +268,7 @@
             <div class="col-md-2">
                 <div class="inner-coutry">
                     <div class="inner-flag">
-                        <img src="~/images/country/sweden_1.png">
+                        <img src="~/images/country/sweden_1.png" loading="lazy">
                         <p>Sweden</p>
                     </div>
                     <!-- <p class="address-text">1608 Clover Bay, Business Bay, Dubai, UAE. PO Box 62049</p> -->
@@ -196,7 +277,7 @@
             <div class="col-md-2">
                 <div class="inner-coutry">
                     <div class="inner-flag">
-                        <img src="~/images/country/greece_1.png">
+                        <img src="~/images/country/greece_1.png" loading="lazy">
                         <p>Greece</p>
                     </div>
                     <!-- <p class="address-text">Junkergatan 4, 126 53 Hagersten</p> -->
@@ -213,7 +294,7 @@
             <div class="col-md-2">
                 <div class="inner-coutry">
                     <div class="inner-flag">
-                        <img src="~/images/country/portugal_1.png">
+                        <img src="~/images/country/portugal_1.png" loading="lazy">
                         <p>Portugal</p>
                     </div>
                     <!-- <p class="address-text">Junkergatan 4, 126 53 Hagersten</p> -->
@@ -222,7 +303,7 @@
             <div class="col-md-2">
                 <div class="inner-coutry">
                     <div class="inner-flag">
-                        <img src="~/images/country/hungary_1.png">
+                        <img src="~/images/country/hungary_1.png" loading="lazy">
                         <p>Hungary</p>
                     </div>
                     <!-- <p class="address-text">Junkergatan 4, 126 53 Hagersten</p> -->
@@ -231,7 +312,7 @@
             <div class="col-md-2">
                 <div class="inner-coutry">
                     <div class="inner-flag">
-                        <img src="~/images/country/austria_1.png">
+                        <img src="~/images/country/austria_1.png" loading="lazy">
                         <p>Austria</p>
                     </div>
                     <!-- <p class="address-text">Junkergatan 4, 126 53 Hagersten</p> -->
@@ -245,8 +326,10 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="map-img"> <img src="~/images/Mapcopy.png" alt="map-img"> </div>
+                <div class="map-img"> <img src="~/images/Mapcopy.png" loading="lazy" alt="map-img"> </div>
             </div>
         </div>
     </div>
 </div>
+
+<div class="overlay"></div>

@@ -4,15 +4,15 @@ namespace TTPLSite.New.Models.Email
 {
     public class InquiryRequest
     {
-        [BindProperty]
+        //[BindProperty]
         public string Email { get; set; }
-        [BindProperty]
+        //[BindProperty]
         public string Phone { get; set; }
-        [BindProperty]
+        //[BindProperty]
         public string UserName { get; set; }
-        [BindProperty]
+        //[BindProperty]
         public string Message { get; set; }
-        [BindProperty]
+        //[BindProperty]
         public string Captcha { get; set; }
     }
 }
