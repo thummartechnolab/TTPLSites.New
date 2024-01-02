@@ -60,16 +60,16 @@ namespace TTPLSite.New.Models.Email
             {
                 email.To.Add(MailboxAddress.Parse(x));
              });
-            _mailSettings.Cc.ToList().ForEach(x =>
+            _mailSettings?.Cc?.ToList().ForEach(x =>
             {
                 email.Cc.Add(MailboxAddress.Parse(x));
             });
-            _mailSettings.Bcc.ToList().ForEach(x =>
+            _mailSettings?.Bcc?.ToList().ForEach(x =>
             {
                 email.Bcc.Add(MailboxAddress.Parse(x));
             });
 
-            email.Subject = $"New Inquiery - {request.UserName}";
+            email.Subject = $"New Inquiry - {request.UserName}";
             var builder = new BodyBuilder();
             builder.HtmlBody = MailText;
             email.Body = builder.ToMessageBody();

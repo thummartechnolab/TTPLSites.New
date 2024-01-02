@@ -1,32 +1,24 @@
 [
   {
-    "outputFileName": "wwwroot/css/site.min.css",
+    "outputFileName": "wwwroot/js/bundle.js",
     "inputFiles": [
-      "wwwroot/css/custom-style.css",
-      "wwwroot/css/industry-style.css",
-      "wwwroot/css/mobile.css",
-      "wwwroot/css/mobile-industry-style.css",
-      "wwwroot/css/slide-style.css",
-      "wwwroot/css/style.css"
-    ],
-    "minify": {
-      "enabled": true,
-      "renameLocals": true
-    },
-    "sourceMap": false
-  },
-  {
-    "outputFileName": "wwwroot/js/site.min.js",
-    "inputFiles": [
+      "wwwroot/js/bootstrap.min.js",
       "wwwroot/js/custom-all.js",
+      "wwwroot/js/jquery-3.3.1.min.js",
       "wwwroot/js/slick.js",
       "wwwroot/js/slick-slide.js",
       "wwwroot/js/style.js"
-    ],
-    "minify": {
-      "enabled": true,
-      "renameLocals": true
-    },
-    "sourceMap": false
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/bundle.css",
+    "inputFiles": [
+      "wwwroot/css/bootstrap.min.css",
+      "wwwroot/css/custom-style.css",
+      "wwwroot/css/mobile.css",
+      "wwwroot/css/slick.min.css",
+      "wwwroot/css/slide-style.css",
+      "wwwroot/css/style.css"
+    ]
   }
 ]

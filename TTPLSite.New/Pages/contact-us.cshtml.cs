@@ -1,12 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Options;
-using System.Net.Mail;
-using System.Net;
 using TTPLSite.New.Models;
 using TTPLSite.New.Models.Email;
 using MimeKit;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Newtonsoft.Json;
 
 namespace TTPLSite.New.Pages
 {
@@ -35,13 +33,13 @@ namespace TTPLSite.New.Pages
 
         //[ValidateReCaptcha]
         [ValidateAntiForgeryToken]
-        public async Task OnPost(InquiryRequest inquiry)
+        public async Task<IActionResult> OnPostSendContact([FromBody] InquiryRequest model)
         {
             try
             {
-                IEnumerable<ModelError> allErrors = ModelState.Values.SelectMany(v => v.Errors);
+                //IEnumerable<ModelError> allErrors = ModelState.Values.SelectMany(v => v.Errors);
 
-                if (await _reCaptchaSetting.IsValid(inquiry.Captcha) && ModelState.IsValid)
+                if (model != null && await _reCaptchaSetting.IsValid(model.Captcha))
                 {
                     //string body = "We have new inqury received: \n" +
                     //               "User Name: " + inquiry.UserName + "\n" +
@@ -53,20 +51,24 @@ namespace TTPLSite.New.Pages
 
                     var inquiryRequest = new InquiryRequest
                     {
-                        UserName = inquiry.UserName,
-                        Email = inquiry.Email,
-                        Phone = inquiry.Phone,
-                        Message = inquiry.Message,
-                        Captcha = inquiry.Captcha,
+                        UserName = model.UserName,
+                        Email = model.Email,
+                        Phone = model.Phone,
+                        Message = model.Message,
+                        Captcha = model.Captcha,
                     };
 
-                   await _mailService.SendInquiryEmailWithTemplateAsync(inquiryRequest);
+                    _mailService.SendInquiryEmailWithTemplateAsync(inquiryRequest).Wait();
+                    return new JsonResult("Successs");
                 }
+                return new JsonResult("Failed");
             }
             catch (Exception ex)
             {
+                _exceptionLogging.WriteInfo(JsonConvert.SerializeObject(model));
                 _exceptionLogging.WriteError(ex);
-                throw;
+
+                return new JsonResult("Failed");
             }
 
         }

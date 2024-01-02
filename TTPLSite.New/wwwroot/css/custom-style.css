@@ -608,7 +608,7 @@ input:focus-visible + label {
 .work-block {
     display: block !important;
     position: relative;
-    background: url(../images/banner-industry1.jpg);
+    background: url(../images/banner-industry1.webp);
     padding: 100px 0 100px;
     background-position: center;
     background-repeat: no-repeat;
