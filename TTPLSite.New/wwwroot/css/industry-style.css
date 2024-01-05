@@ -4,7 +4,12 @@
 .services-saction-banner p {
     color: #000;
 }
-
+.industry-slider .slick-slide {
+    border-radius: 5px;
+    border: 1px solid #DADADA;
+    background: #FCFCFC;
+    padding: 24px;
+}
 .industry-banner {
     background: url(../images/health-care/healthcare-banner.png);
     background-position: center;
@@ -1092,7 +1097,7 @@ h2.title-class span {
 .title-iot p {
     font-size: 18px;
     line-height: 28px;
-	color:#212529;
+    color: #212529;
 }
 .industry-btn a {
     padding: 15px 30px;
@@ -1107,4 +1112,7 @@ h2.title-class span {
 }
 .effect-strat.slick-slide ul {
     padding: 0 0px 0px 15px;
+}
+.services-saction-banner.industry-banner .col-md-10.col-lg-6 {
+    width: 65%;
 }

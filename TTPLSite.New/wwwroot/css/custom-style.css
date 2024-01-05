@@ -1404,15 +1404,18 @@ a.bnt-gt {
     width: 95%;
     display: inline-block;
 }
-
+.reactjs-header-section .head-banner-pic {
+    position: absolute;
+    bottom: -17px;
+}
 .reactjs-header-section {
-    background: url(../images/reactjs/banner-react.png);
-    background-size: cover;
+    background: url(../images/reactjs/banner-react.png) !important;
+    background-size: cover !important;
     width: 100%;
-    display: inline-block;
+    display: inline-block !important;
     height: 100%;
-    background-position: center;
-	
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 .head-banner-inner {
 	padding: 180px 0 0;
@@ -1937,10 +1940,10 @@ a.bnt-gt {
     height: auto;
 }
 .vuejs-header-section {
-    background: url(../images/vuejs/vue.js-banner.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url(../images/vuejs/vue.js-banner.png) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
     padding: 85px 0 95px;
 }
 
@@ -2174,12 +2177,12 @@ a.bnt-gt {
 }
 .uiux-header-section {
     width: 100vw;
-    background: url(../images/ui-ux/banner.png);
-    background-position: 100%;
+    background: url(../images/ui-ux/banner.png) !important;
+    background-position: 100% !important;
     height: 100vh;
-    vertical-align: middle;
-    background-size: cover;
-    background-repeat: no-repeat;
+    vertical-align: middle !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
 .uiux-header-inner p {
     width: 65%;
@@ -3201,10 +3204,10 @@ p.para-php {
 }
 
 .laravel-header-section {
-    background: url(../images/larave/banner-Laravel.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: url(../images/larave/banner-Laravel.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
 }
 .php-heding h2 {
     width: 73%;
@@ -3501,13 +3504,13 @@ p.para-php {
 }
 .java-header-section {
     width: 100vw;
-    background: url(../images/java/java-banner.png);
-    background-position: 100%;
+    background: url(../images/java/java-banner.png) !important;
+    background-position: 100% !important;
     height: 100vh;
     display: table-cell;
     vertical-align: middle;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
 .java-heding p {
     width: 75%;
@@ -3576,13 +3579,13 @@ p.para-php {
 }
 .nodejs-header-section {
     width: 100vw;
-    background: url(../images/nodejs/banner-nodejs.png);
+    background: url(../images/nodejs/banner-nodejs.png) !important;
     background-position: 100%;
     height: 100vh;
-    display: table-cell;
-    vertical-align: middle;
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: table-cell !important;
+    vertical-align: middle !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
 .nodejs-cls .service-box {
     min-height: 330px;
@@ -3853,13 +3856,13 @@ p.para-php {
 }
 .ruby-header-section {
     width: 100vw;
-    background: url(../images/ruby/ruby-banner.png);
-    background-position: 100%;
+    background: url(../images/ruby/ruby-banner.png) !important;
+    background-position: 100% !important;
     height: 100vh;
     display: table-cell;
-    vertical-align: middle;
-    background-size: cover;
-    background-repeat: no-repeat;
+    vertical-align: middle !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
 .ruby-header-section .head-banner-inner {
     padding: 0; 
@@ -4221,10 +4224,10 @@ p.para-php {
     padding: 0px 0 0;
 }
 .python-header-section {
-    background: url(../images/python/banner-Python.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url(../images/python/banner-Python.png) !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
 .service-section-python {
     padding: 90px 0 82px;
@@ -4416,10 +4419,10 @@ p.para-php {
 
 
 .wordpress-header-section {
-    background: url(../images/wordpress/banner-wordpress.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url(../images/wordpress/banner-wordpress.png) !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
 
 .service-section-wordpress {
@@ -4737,10 +4740,10 @@ p.para-php {
 
 /*****technology android page start ***/
 .android-header-section {
-    background: url(../images/android/banner.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;  
+    background: url(../images/android/banner.png) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 .android-header-section .row { 
     position: relative;
@@ -5033,9 +5036,17 @@ h6.backend-page {
 .box-sixth h4 {
     color: #F06115;
 }
-
+.box-sixth p {
+    width: 52%;
+}
 .box-seventh h4 {
     color: #2A4687;
+}
+.box-seventh p {
+    width: 68% !important;
+}
+.box-fifth p {
+    width: 55%;
 }
 .box-fifth {
     background: url(../images/android/royal-blue.png);
@@ -5043,7 +5054,7 @@ h6.backend-page {
     background-repeat: no-repeat;
     width: 100%;
     position: relative;
-    background-position: top;
+    background-position: top left;
 }
 .box-sixth {
     background: url(../images/android/yellow-line.png);
@@ -5051,7 +5062,7 @@ h6.backend-page {
     background-repeat: no-repeat;
     width: 100%;
     position: relative;
-    background-position: top;
+    background-position: top left;
 }
 .box-seventh {
     background: url(../images/android/dark-blue.png);
@@ -5059,11 +5070,9 @@ h6.backend-page {
     background-repeat: no-repeat;
     width: 77%;
     position: relative;
-    background-position: top;
+    background-position: top left;
 }
-.box-seventh p {
-    width: 93%;
-}
+
 .inner-mobile-app {
     text-align: center;
     border-radius: 11px;
@@ -6313,10 +6322,10 @@ justify-content: center;
 
 /* azure  page end */
 .azure-header-section {
-    background: url(../images/azure/banner-azure.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url(../images/azure/banner-azure.png) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 .choosing-azure {
     background: #F2F2F2;
@@ -6599,7 +6608,9 @@ justify-content: center;
 
 /* DevOps Developer Css Start */
 
-.DevOps-header-section {
+.
+
+.services-saction-banner.DevOps-header-section {
     background: url(../images/devops/DevOps.png);
     height: 100vh;
     background-position: 100%;
@@ -6909,7 +6920,7 @@ button.btn-main {
     margin: 52px auto 0;
 }
 /*aws page style-start*/
-.aws-header-section {
+.services-saction-banner.aws-header-section {
     background: url(../images/aws/banner-aws.png);
     background-size: cover;
     background-position: center;
@@ -7043,7 +7054,7 @@ button.btn-main {
 
 
 .rotating-text-wrapper {
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -7060,7 +7071,7 @@ button.btn-main {
     opacity: 0;
     font-weight: 700;
     position: relative;
-    top: -14%;
+    top: -16%;
     right: 7px;
 }
   .rotating-text-wrapper h2:nth-child(1) {

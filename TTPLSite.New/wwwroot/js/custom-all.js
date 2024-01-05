@@ -1,4 +1,4 @@
-
+﻿
 jQuery(document).ready(function($) {
   $('.industry-slider').slick({
     dots: true,
@@ -432,3 +432,43 @@ $(window).scroll(function() {
       }]
   });
   });
+
+
+//#region - start of - number counter animation
+const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
+    const target = document.querySelector(qSelector);
+    let startTimestamp = null;
+    const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        target.innerText = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        }
+    };
+    window.requestAnimationFrame(step);
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+    counterAnim("#count1", 150, 80, 1000);
+    counterAnim("#count2", 320, 65, 1500);
+    counterAnim("#count3", 100, 10, 2000);
+    counterAnim("#count4", 50, 5, 2500);
+});
+
+
+$(function () {
+    $(".section-01").hide();
+
+    $(".secList").on("click", function () {
+        // クリックした要素の ID と違うクラス名のセクションを非表示
+        $(".section-01")
+            .not($("." + $(this).attr("id")))
+            .hide();
+        // クリックした要素の ID と同じクラスのセクションを表示
+        $("." + $(this).attr("id")).show(1000);
+        $("#fuu").hide();
+        // toggle にすると、同じボタンを 2 回押すと非表示になる
+        // $('.'+$(this).attr('id')).toggle();
+    });
+});
