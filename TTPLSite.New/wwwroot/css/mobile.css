@@ -44,7 +44,9 @@
 
 
 @media only screen and (max-width: 767px) {
-
+    .services-saction-banner.E-Commerce-banner {
+        height: 70vh !important;
+    } 
 .technology-drop ul.dropdown-menu {
     overflow: scroll;
     height: 600px !important;
@@ -506,16 +508,16 @@
         width: 7px;
         height: 7px;
         top: 8px;
-        ;
     }
 
     .expertise-section p.ttpl-pra {
         margin-bottom: 28px;
     }
 
-    .slider-logo .slick-arrow {
-        display: inherit;
-    }
+.slider-logo .slick-arrow {
+    display: inherit;
+    margin: -10px auto !important;
+}
 
     .form-job h3 {
         font-size: 20px;
@@ -1773,6 +1775,9 @@
         padding: 40px 0 70px;
     }
 
+.work.methodology-section {
+    display: inline-block;
+}
     section.bg-graylight.our-web .service-box.bg-white {
         margin-bottom: 0px;
     }
@@ -1790,7 +1795,7 @@
 
     .service-box.bg-white h3 {
         font-size: 20px;
-        padding: 1px 0 10px 14px;
+        padding: 1px 0 10px 0px;
         line-height: 28px;
     }
 
@@ -3800,6 +3805,7 @@ ul.list-ul li {
 }
 .style-box {
     margin: 50px 0;
+    background: transparent !important;
 }
 .titiel-revolu {
     width: 100%;
@@ -4137,7 +4143,7 @@ img.pic-res {
     line-height: 26px;
 }
 .angular-header-section {
-    height: 50vh !important;
+    height: 65vh !important;
     display: flex;
     align-items: center;
 }
@@ -4157,6 +4163,8 @@ ul.slider-reactjs.slick-initialized.slick-slider {
     font-size: 15px;
     line-height: 16px;
     padding: 4px 7px;
+    position: relative;
+    right: 24px !important;
 }
 .slider-reactjs .slick-prev:before {
     font-size: 15px;
@@ -4817,6 +4825,7 @@ ul.slider-reactjs.slick-initialized.slick-slider {
 }
 .prefered-react-section {
     padding: 30px 0;
+    overflow: hidden;
 }
 .services-saction-banner.vuejs-header-section {
     height: 50vh !important;
@@ -5316,6 +5325,7 @@ ul.slider-reactjs.slick-initialized.slick-slider {
 }
 .iner-box {
     top: -30px;
+    left: 0px;
 }
 .iner-box h4 {
     font-size: 22px;
@@ -5328,9 +5338,13 @@ ul.slider-reactjs.slick-initialized.slick-slider {
     padding: 32px 0px 15px 32px;
     font-size: 14px;
 }
+.box-seventh p {
+    width: 100% !important;
+}
 
-
-
+.box-seventh {
+    width: 100% !important;
+}
 
 .inner-native h4 {
     font-size: 20px;
@@ -6116,20 +6130,20 @@ h4.head-1 {
     font-size: 22px;
 }
 .rotating-text-wrapper h2:nth-child(1) {
-    top: -8%;
+    top: -13%;
 }
 .rotating-text-wrapper h2:nth-child(2) {
-    top: -8%;
+    top: -12%;
 }
 .rotating-text-wrapper h2:nth-child(3) {
     animation-name: rotating-text-3;
-    top: -11%;
+    top: -22%;
 }
 .rotating-text-wrapper h2:nth-child(4) {
-    top: -5%;
+    top: -3%;
 }
 .rotating-text-wrapper h2:nth-child(5) {
-    top: 4%;
+    top: 11%;
 }
 .rotating-text-wrapper h2 >br {
     display: none;
@@ -6158,9 +6172,12 @@ h4.head-1 {
     padding-left: 0px;
     padding: 33px;
 }
+.box-four {
+    width: 100% !important;
+}
 .style-box p {
-    width: 79%;
-    padding: 33px;
+    width: 100%;
+    padding: 32px 0px 15px 10px !important;
 }
 .service-section-ruby {
     padding: 30px 0;
