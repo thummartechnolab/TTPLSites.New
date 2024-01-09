@@ -44,6 +44,44 @@
 
 
 @media only screen and (max-width: 767px) {
+
+    .services-saction-banner .row .col-md-8.col-lg-8 {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    .services-saction-banner .col-md-8 {
+        width: 100% !important;
+    }
+
+    .services-saction-banner .col-md-10 {
+        width: 100% !important;
+    }
+
+    .reactjs-header-section .col-md-8 {
+        width: 100% !important;
+    }
+
+       .vuejs-hire-list.php-hire-listing {
+        width: 100%;
+    }
+    .react-box.ios-box .wapper-icon img {
+        margin: auto;
+    }
+    .react-box.ios-box img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .react-box.ios-box .wapper-icon {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        vertical-align: middle;
+    }
+    .vuejs-hire-list ul li {
+        width: 90%;
+    }
     .services-saction-banner.E-Commerce-banner {
         height: 70vh !important;
     } 
@@ -4155,6 +4193,7 @@ img.pic-res {
 .react-box {
     padding: 24px 20px;
     margin-top: 80px;
+    min-height: auto;
 }
 ul.slider-reactjs.slick-initialized.slick-slider {
     padding-left: 0;

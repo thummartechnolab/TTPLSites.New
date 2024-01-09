@@ -3621,11 +3621,6 @@ p.par-same {
     background-repeat: no-repeat;
 }
 
-    .services-saction-banner .col-md-12 {
-        position: relative;
-        z-index: 99;
-    }
-
     .services-saction-banner h2 {
         color: #fff;
         font-size: 60px;
@@ -11410,7 +11405,7 @@ p.par-same {
 .section-head h5 {
     font-size: 22px;
     font-weight: 600;
-    color: #FF3C00;
+    color: #F06115;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 5px;
@@ -11450,7 +11445,7 @@ p.par-same {
 
     .section-head h2 span {
         text-transform: capitalize;
-        color: #FF3C00;
+        color: #F06115;
     }
 
 .services-section.style-3 .services-single-items {
@@ -11523,7 +11518,7 @@ p.par-same {
     content: "";
     height: 100%;
     width: 100%;
-    background: #FF3C00;
+    background: #F06115;
     position: absolute;
     left: 0;
     bottom: -120%;
@@ -11715,11 +11710,14 @@ p.par-same {
     width: 100%;
     padding: 50px 0 0 0;
 }
-
+    .skil-saction-left .progress {
+        --bs-progress-bg: inherit;
+    }
 .title {
     display: flex;
     justify-content: space-between;
     margin-bottom: 13px;
+    padding:40px 0 0;
 }
 
     .title h3 {
@@ -13382,8 +13380,16 @@ h2.section-title-text.h2 {
     padding: 3.125rem 0;
     text-align: center;
 }
+    .bg-graylight .slick-prev::before {
+        color: #f06115 !important;
+    }
 
-
+.bg-graylight .slick-next::before {
+    color: #f06115 !important;
+}
+.slider-reactjs .slick-next::before {
+    display:none;
+}
 .hire-web-development-team {
     display: inline-block;
     width: 100%;
@@ -14597,11 +14603,12 @@ section.portfolio-single-section {
 
 .btn-sng a {
     padding: 10px 30px;
-    color: #f06115;
+    color: #fff;
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
     border: solid 1px #fff;
+    background: #f06115;
 }
 
     .btn-sng a i {
@@ -15024,11 +15031,31 @@ section.portfolio-single-section {
     }
 
     .services-saction-banner .col-md-12 {
-        width: 59%;
+        width: 60%;
     }
     .services-saction-banner-UX-Design .col-md-12 {
         width: 59%;
     }
 .technology-section .tab {
     z-index: 999;
+}
+
+.services-saction-banner .row .col-md-8.col-lg-8 {
+    display: block !important;
+    width: 60% !important;
+}
+.services-saction-banner .col-md-8 {
+    width: 60% !important;
+}
+.services-saction-banner .col-md-10 {
+    width: 60% !important;
+}
+.reactjs-header-section .col-md-8 {
+    width: 60% !important;
+}
+.content-portfolio .btn {
+    display: contents;
+}
+.prefered-react-section .slick-next.slick-arrow {
+    background: inherit !important;
 }
