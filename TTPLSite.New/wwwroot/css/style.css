@@ -14557,9 +14557,9 @@ color: #000;
 	left: -342px;
 }
 .technology-drop .dropdown-menu .menu-sub-box {
-	width: 16.6%;
+	width: 20%;
 	float: left;
-	padding: 0 15px 0 0;
+	padding: 0 15px 0 20px;
 }
 .menu-sub-box h3 {
 	color: #fff;
