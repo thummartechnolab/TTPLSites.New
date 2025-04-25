@@ -1,6 +1,10 @@
 [
   {
     "outputFileName": "wwwroot/js/bundle.js",
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
     "inputFiles": [
       "wwwroot/js/bootstrap.min.js",
       "wwwroot/js/custom-all.js",
@@ -12,6 +16,10 @@
   },
   {
     "outputFileName": "wwwroot/css/bundle.css",
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
     "inputFiles": [
       "wwwroot/css/bootstrap.min.css",
       "wwwroot/css/custom-style.css",
